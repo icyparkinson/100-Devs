@@ -1,0 +1,122 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+.top{
+height: 300px;
+width: 30%;
+border: 2px solid black;
+}
+
+.topper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.quad{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.quad > section{
+    border: 2px solid red;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.chosen{
+    display: flex;
+    order: -1;
+}
+
+.trio{
+    border: 2px solid orange;
+    height: 400px;
+    width: 33.3333%;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+.bottom{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.new{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.quint{
+    height: 200px;
+    width: 100px;
+    display: flex;
+    border: 2px solid green;
+    flex-wrap: wrap;
+}
+
+.quint:nth-child(3){
+    height: 300px;
+    width: 200px;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+nav > ul > li{
+    display: inline;
+    padding: 0 10px;
+}
+
+.indent{
+    padding-right: 20%;
+}
+
+form{
+    display: inline;
+}
+
+.trio img{
+    width: 100%;
+}

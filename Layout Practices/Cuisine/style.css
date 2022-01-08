@@ -1,0 +1,193 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+background: whitesmoke;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+main{
+  height: 400px;
+  border: 2px solid orange;
+  background-image: url(https://wallpaper.dog/large/5551203.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main > h1{
+  margin: 150px 50% 0 100px;
+  font-size: 50px;
+}
+
+main > form{
+  margin-left: 100px;
+  display: inline;
+}
+
+main > button{
+  display: inline;
+}
+
+.alignR>h2, .alignR>h3, .alignR>p, .alignR>button{
+  margin: 0 50px 0 600px;
+}
+
+.alignR{
+  height: 600px;
+  background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/03/54/52/48579ab8ee53f97.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.alignR>h3{
+  padding-top: 100px;
+}
+
+.quad{
+  height: 300px; 
+  width: 20%;
+  float: left;
+  /* border: 2px solid green; */
+  margin: 50px 30px;
+  overflow: hidden;
+}
+
+.one{
+  position: relative;
+  max-width: auto;
+  height: 100%;
+  right: 60px;
+}
+
+.two{
+  position: relative;
+  max-width: auto;
+  height: 100%;
+}
+
+.specialty, .container{
+  text-align: center;
+  background: whitesmoke;
+}
+
+.time{
+  height: 40px;
+  width: 50%;
+  float: left;
+}
+
+section>h4{
+  clear: both;
+} 
+
+.book{
+  text-align: center;
+  clear: both;
+}
+
+.book{
+  background-image:url(https://i.pinimg.com/originals/22/a9/eb/22a9eb00a7684465f681334ae65e8fde.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.book > img{
+  height: 500px;
+  width: auto;
+  margin-top: 50px;
+}
+
+.customer > img{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 205px;
+  margin-bottom: 30px;
+}
+
+.customer{
+  height: 600px;
+  text-align: center;
+  margin: 0 80px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+nav{
+  float: right;
+}
+
+nav > ul > li{
+  display: inline-block;
+  color: red;
+  padding-right: 20px;
+}
+
+nav > ul > li > a{
+  color: black;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+h2{
+  font-size: 40px;
+}
+
+h3{
+  color: orange;
+}
+
+h4{
+  font-size: 20px;
+}
+
+p{
+  font-size: 15px;
+  line-height: 30px;
+  padding: 10px 0;
+}
+
+.specialty > ul > li{
+  display: inline-block;
+  padding: 0 70px;
+}
+
+span{
+  display: block;
+}
+
+.checked {
+  color: orange;
+  padding: 20px 0;
+}

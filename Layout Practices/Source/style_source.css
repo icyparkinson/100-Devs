@@ -1,0 +1,162 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+* {
+    font-family: Arial;
+    background: rgb(247, 249, 252);
+    color: rgb(109, 119, 129);
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+    height: 70px;
+    /* border: 2px solid black; */
+    text-align: center;
+}
+
+header span{
+    float: left;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 5px;
+    width: 10%;
+    color:rgb(54, 69, 88);
+}
+
+header nav{
+    width: 80%;
+    height: 50px;
+    float: left;
+    /* border: 2px solid yellow; */
+}
+
+header button{
+    display: table-cell;
+    vertical-align: middle;
+    width: 10%;
+    height: 40%;
+    float: right;
+}
+
+header ul li{
+    display: inline-block;
+    padding: 0 14px;
+}
+
+header ul a{
+    text-decoration: none;
+}
+
+.top section{
+    height: 500px;
+    /* border: 2px solid red; */
+    padding-right: 200px;
+    padding-left: 100px;
+    float: left;
+}
+
+h1{
+    font-size: 45px;
+    color:rgb(54, 69, 88);
+}
+
+.topLeft{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.topLeft form{
+    display: inline;
+}
+
+.topLeft button{
+    width: 30%;
+}
+
+.topRight{
+    width: 50%;
+    background-image: url("sourcepic.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.quad section{
+    height: 300px;
+    width: 25%;
+    padding: 40px 90px;
+    /* border: 2px solid blue; */
+    float: left;
+}
+
+.one, .two, .three, .four{
+    height: 50px;
+    width: 200px;
+    color: transparent;
+    display: block;
+    background-image: url("sourceicon.png");
+    background-size:350%;
+    background-repeat: no-repeat;
+}
+
+.two{
+    background-position: -225px 0;
+}
+
+.three{
+    background-position: -440px 0;
+}
+
+.four{
+    background-position: -665px 0;
+}
+
+.quad h3, .quad a{
+    color:rgb(54, 69, 88);
+    text-decoration: none;
+}
+
+.bottom {
+    height: 270px;
+    /* border: 2px solid green; */
+    padding: 20px 870px 0 100px;
+    clear: both;
+    background: white;
+}
+
+.bottom h2{
+    font-size: 40px;
+    color:rgb(54, 69, 88);
+    background: white;
+}
+
+.bottom p{
+    background: white;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
