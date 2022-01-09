@@ -64,16 +64,47 @@ main > button{
   background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/03/54/52/48579ab8ee53f97.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: auto;
 }
 
 .alignR>h3{
   padding-top: 100px;
 }
 
+
+
+.containerb{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containerl{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containerdi{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containerde{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containers{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hidden{
+  display: none;
+}
+
 .quad{
   height: 300px; 
   width: 20%;
-  float: left;
   /* border: 2px solid green; */
   margin: 50px 30px;
   overflow: hidden;
@@ -87,6 +118,12 @@ main > button{
 }
 
 .two{
+  position: relative;
+  max-width: auto;
+  height: 100%;
+}
+
+.three{
   position: relative;
   max-width: auto;
   height: 100%;
