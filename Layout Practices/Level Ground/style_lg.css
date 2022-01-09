@@ -33,29 +33,50 @@ body {
 /* LAYOUT
 /*******************************************/
 
+header{
+    display: flex;
+    justify-content: center;
+    background: rgb(106,118,136);
+}
 
-h1, h2, h3, nav{
-    text-transform:uppercase;
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    padding-top: 10px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
 }
 
 nav .logo{
-    padding: 0 3%;
+    padding: 5px 3%;
+    height: 40px;
+    
 }
 
 .grit{
-    height:400px;
-    background:gray;
+    height:350px;
+    background:rgb(106,118,136);
     color: white;
     display: table-cell;
     vertical-align:middle;
     padding: 0 3%;
-    clear:both;
+    
 }
 
 .why, .volunteer{
+    display:flex;
+    flex-direction: column;
     height: 300px;
     padding: 20px 3%;
-    clear:both;
+}
+
+.volunteer{
+    width: 60%;
+    margin: auto;
 }
 
 .volunteer span{
@@ -67,13 +88,16 @@ nav .logo{
     text-decoration: none;
 }
 
+.visit{
+    display: flex;
+
+}
 
 .visit > section{
     height: 400px;
     width: 50%;
     padding: 20px 3%;
-    float: left;
-    background: lightgray;
+    background: rgb(221,223,226);
 }
 
 footer{
@@ -83,6 +107,7 @@ footer{
 .links img{
     margin-left: 30px;
 }
+
 
 .contacts, .links, .copyright{
     padding: 20px;
@@ -117,7 +142,6 @@ footer{
 }
 
 .links h5{
-    text-transform: uppercase;
     padding-top: 10px;
     padding-left: 30px;
 }
@@ -133,7 +157,6 @@ footer{
 
 .contacts h5{
     color: white;
-    text-transform: uppercase;
     line-height: 1px;
 }
 
@@ -145,6 +168,41 @@ footer{
     color: white;
 }
 
+.upper{
+    text-transform: uppercase;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+
+.button{
+    background: white;
+    color: rgb(106,118,136);
+    border-radius: 5px;
+    height: 60%;
+    width: 75px;
+    font-size: 12px;
+}
+
+.grit img{
+    height: 40px;
+    /* border: 2px solid green; */
+   
+}
+
+.grit > a{
+    color: white;
+    text-decoration: none;
+    /* border: 2px solid red; */
+
+}
+
+.volunteer a{
+    color: black;
+}
+
+.links img{
+    height: 30px;
+}
