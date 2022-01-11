@@ -65,6 +65,8 @@ span:nth-child(1){
 
 p{
     font-family: verdana;
+    padding: 20px 0;
+    line-height: 35px;
 }
 
 button{
