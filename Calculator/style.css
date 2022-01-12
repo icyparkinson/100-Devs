@@ -60,8 +60,10 @@ table {
   /*******************************************/
 
 body{
-    background: lightgray;
+    background: rgb(236,215,218);
     color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
 }
 
 .container{
@@ -76,16 +78,20 @@ body{
 
 .display{
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 15px;
     height: 100px;
     width: 400px;
-    border: 2px solid purple;
+    border: 3px solid black;
+    background:rgb(139, 52, 64);
+    color: white;
     align-items: center;
+    font-size: 60px;
 }
 
 .row{
     display: flex;
-    border: 1px solid red;
+    border: 1px solid rgb(black);
     width: 400px;
     flex-wrap: wrap;
 }
@@ -94,13 +100,21 @@ body{
     display: flex;
     width: 25%;
     height: 100px;
-    border: 2px solid green;
+    border: 2px solid black;
+    background:rgb(235, 133, 147);
+    color: white;
     align-items: center;
     justify-content: center;
 }
 
+.operator{
+    background:rgb(241, 183, 107)
+}
+
 .bigger{
     width: 75%;
+    background:rgb(189, 76, 91);
+    color: white;
 }
 
 .bigg{
