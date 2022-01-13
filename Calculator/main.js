@@ -1,3 +1,9 @@
+ //AC Button While Loop
+
+ function acButton(){
+    document.querySelector("#ac").textContent = "C"
+}
+
 //Assigning shortcut variable for display
 const display = document.querySelector("#display")
 
@@ -6,6 +12,7 @@ document.querySelector("#ac").addEventListener("click", clearDisplay)
 
 function clearDisplay(){
     document.querySelector("#display").textContent = 0
+    document.querySelector("#ac").textContent = "AC"
 }
 
 //Assigning numbers to each button
@@ -18,6 +25,7 @@ function oneButton(){
     else{
     display.textContent += 1
     }
+    acButton()
  }
 
  document.querySelector("#two").addEventListener("click", twoButton)
@@ -29,6 +37,7 @@ function twoButton(){
     else{
     display.textContent += 2
     }
+    acButton()
  }
 
  document.querySelector("#three").addEventListener("click", threeButton)
@@ -40,6 +49,7 @@ function twoButton(){
      else{
      display.textContent += 3
      }
+     acButton()
   }
 
   document.querySelector("#four").addEventListener("click", fourButton)
@@ -51,6 +61,7 @@ function twoButton(){
       else{
       display.textContent += 4
       }
+      acButton()
    }
 
    document.querySelector("#five").addEventListener("click", fiveButton)
@@ -62,6 +73,7 @@ function twoButton(){
        else{
        display.textContent += 5
        }
+       acButton()
     }
 
     document.querySelector("#six").addEventListener("click", sixButton)
@@ -73,6 +85,7 @@ function twoButton(){
         else{
         display.textContent += 6
         }
+        acButton()
      }
 
      document.querySelector("#seven").addEventListener("click", sevenButton)
@@ -84,6 +97,7 @@ function twoButton(){
          else{
          display.textContent += 7
          }
+         acButton()
       }
 
 
@@ -96,6 +110,7 @@ function twoButton(){
           else{
           display.textContent += 8
           }
+          acButton()
        }
 
 
@@ -108,6 +123,7 @@ function twoButton(){
            else{
            display.textContent += 9
            }
+           acButton()
         }
 
         document.querySelector("#zero").addEventListener("click", zeroButton)
@@ -119,6 +135,7 @@ function twoButton(){
            else{
            display.textContent += 0
            }
+           acButton()
         }
 
     //Assigning operators
@@ -184,3 +201,6 @@ function twoButton(){
   function equalButton(){
     display.textContent = eval(display.textContent)
   }
+
+
+ 
