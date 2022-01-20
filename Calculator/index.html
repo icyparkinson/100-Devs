@@ -11,6 +11,8 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
+        <section id="fancy">
+        <h1>Fancy Calculator</h1>
         <section class = "container">
             <section class="display" id = "display">0</section>
             <section class="row">
@@ -41,8 +43,22 @@
                 <section class="border operator" id = "equal">=</section>
             </section>
         </section>
+        </section>
 
-		
+        <section id="simple">
+            <h2>Simple Calculator</h2>
+            <form><input type = text placeholder = "Enter first value"></form>
+            <form><input type = text placeholder = "Enter second value"></form>
+            <span>What would you like to do to these values?</span>
+            <section id = "operators">
+            <button type = button id = "add">+</button>
+            <button type = button id = "min">-</button>
+            <button type = button id = "mult">*</button>
+            <button type = button id = "div">/</button>
+            </section>
+            <h4>Result:</h4>
+            <span id = "result"></span>
+        </section>
 
 		<script type="text/javascript" src="main.js"></script>
 	</body>
