@@ -203,4 +203,44 @@ function twoButton(){
   }
 
 
+ ///// SIMPLE CALCULATOR ////////
+
  
+ document.querySelector("#add").addEventListener("click", addMe)
+ document.querySelector("#sub").addEventListener("click", subMe)
+ document.querySelector("#multiply").addEventListener("click", multMe)
+ document.querySelector("#divide").addEventListener("click", divMe)
+
+
+
+ function addMe(){
+    let num1 = Number(document.querySelector("#val1").value)
+    let num2 = Number(document.querySelector("#val2").value)
+    let z = num1 + num2
+    console.log(z)
+    document.querySelector("#result").innerHTML = `Result = ${z}`
+ }
+
+ function subMe(){
+    let num3 = Number(document.querySelector("#val1").value)
+    let num4 = Number(document.querySelector("#val2").value)
+    let r = num3 - num4
+    console.log(r)
+    document.querySelector("#result").innerHTML = `Result = ${r}`
+ }
+
+ function multMe(){
+    const num1 = Number(document.querySelector("#val1").value)
+    const num2 = Number(document.querySelector("#val2").value)
+    let z = num1 * num2
+    console.log(z)
+    document.querySelector("#result").innerHTML = `Result = ${z}`
+ }
+
+ function divMe(){
+    const num1 = Number(document.querySelector("#val1").value)
+    const num2 = Number(document.querySelector("#val2").value)
+    let z = num1 / num2
+    console.log(z)
+    document.querySelector("#result").innerHTML = `Result = ${z}`
+ }

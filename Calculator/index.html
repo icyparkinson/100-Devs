@@ -47,17 +47,20 @@
 
         <section id="simple">
             <h2>Simple Calculator</h2>
-            <form><input type = text placeholder = "Enter first value"></form>
-            <form><input type = text placeholder = "Enter second value"></form>
+        <section id = "values">
+            <label for = "val1">First Value:</label>
+            <form><input type = text id = val1 placeholder = "Enter first value"></form>
+            <label for = "val2">Second Value:</label>
+            <form><input type = text id = val2 placeholder = "Enter second value"></form>
+        </section>
             <span>What would you like to do to these values?</span>
             <section id = "operators">
             <button type = button id = "add">+</button>
-            <button type = button id = "min">-</button>
-            <button type = button id = "mult">*</button>
-            <button type = button id = "div">/</button>
+            <button type = button id = "sub">-</button>
+            <button type = button id = "multiply">*</button>
+            <button type = button id = "divide">/</button>
             </section>
-            <h4>Result:</h4>
-            <span id = "result"></span>
+            <h4 id = "result"></h4>
         </section>
 
 		<script type="text/javascript" src="main.js"></script>

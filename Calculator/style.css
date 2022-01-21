@@ -141,6 +141,22 @@ body{
 
   form{
       text-align: center;
+      display: inline;
+  }
+
+  input{
+      width: 30%;
+      text-align: center;
+  }
+
+  label{
+      font-size: 15px;
+      display: inline-block
+
+  }
+
+  #values{
+      text-align: center;
   }
 
   span{
