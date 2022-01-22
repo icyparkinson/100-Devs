@@ -13,19 +13,37 @@
 	</head>
 	<body>
 
-        <h1>Horoscope</h1>
-
-		<h1>When is your birthday?</h1>
-        <form><input type = text id = month placeholder = "Enter month"></form>
-        <form><input type = text id = day placeholder = "Enter date"></form>
-		<button type = button id = "button">Submit</button>
-		
+        <h1>Sailor Moon Horoscope</h1>
+			<section>
+				<img src="sailorteam.jpg" id = "team">
+				<span>Which Sailor Moon character are you?</span>
+				<h2>When is your birthday?</h2>
+				<form><input type = text id = month placeholder = "Enter month"></form>
+				<form><input type = text id = day placeholder = "Enter date"></form>
+				<button type = button id = "button">Submit</button>
+			</section>
 
 		<h3>Your horoscope sign is:</h3>
 		<span id="sign"></span>
 
-		<p id="signInfo"></p>
+		<img src="ami.png" class = "hidden" id = "virgo">
+		<img src="minako.jpg" class = "hidden" id = "libra">
+		<img src="rei.jpg" class = "hidden" id = "aries">
+		<img src="makoto.png" class = "hidden" id = "sagittarius">
+		<img src="hotaru.jpg" class = "hidden" id = "capricorn">
+		<img src="haruka.jpg" class = "hidden" id = "aquarius">
+		<img src="michiru.jpg" class = "hidden" id = "pisces">
+		<img src="setsuna.webp" class = "hidden" id = "scorpio">
+		<img src="mamoru.jpg" class = "hidden" id = "leo">
+		<img src="usagi.gif" class = "hidden" id = "cancer">
+		<img src="chibiusa.jpg" class = "hidden" id = "gemini">
+		<img src="luna.jpg" class = "hidden" id = "taurus">
 
+
+		<p id="signInfo"></p>
+		<div id="button" class = "hidden">
+		<button type = button id="back">Go back</button>
+		</div>
 		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>

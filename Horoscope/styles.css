@@ -12,11 +12,33 @@
   /*******************************************/
   body{
     text-align: center;
+    background: lightyellow;
+  }
+
+  body>img{
+    height: 400px;
   }
   
   button{
     margin: 10px;
   }
+
+  .hidden{
+    display: none;
+  }
+
+img{
+  margin: 10px auto;
+  display: block;
+  height: 200px;
+}
+
+#sign{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 30px;
+  margin: 10px;
+}
+
   /******************************************
   /* ADDITIONAL STYLES
   /*******************************************/
