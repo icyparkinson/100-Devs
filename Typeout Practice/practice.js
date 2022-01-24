@@ -295,7 +295,21 @@
 // pow(2,3)
 
 
-let fruits = ["apple", "banana", "grapes", "pear"]
+// let fruits = ["apple", "banana", "grapes", "pear"]
 
 
-for (const noms of fruits){console.log(noms)}
+// for (const noms of fruits){console.log(noms)}
+
+let nums = [1, 2, 3]
+nums.forEach((item, i) => {
+    nums[i] = item + 3 })
+
+    console.log(nums)
+
+    let x=0
+for (let i=0; i<nums.length; i++){
+       
+        x += nums[i]
+    } 
+    
+    console.log(x/nums.length)
