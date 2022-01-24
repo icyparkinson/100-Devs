@@ -259,3 +259,43 @@
 // //   }
 // //   return result;
 // // }
+
+
+
+// document.querySelector("#check").addEventListener("click", checkDate)
+
+
+// function checkDate(){
+
+//     const day = document.querySelector("#day").value.toLowerCase()
+
+//     if (day==="tuesday" || day==="thursday"){
+//         console.log ("It's class day!")
+//     }
+//     else if (day==="saturday" || day === "sunday"){
+//         console.log("It's weekend!")
+//     }
+//     else{
+//         console.log("it's a boring day")
+//     }
+// }
+
+// const animals = ["fox", "dog", "cat"]
+// animals.forEach(cutie => {
+//     console.log(cutie)
+// })
+
+// function pow(x,n){
+//     let result = x
+//     for (let i = 1; i<n; i++){
+//         result *= x
+//     } console.log(result)
+// }
+
+// pow(2,3)
+
+
+let fruits = ["apple", "banana", "grapes", "pear"]
+
+
+for (const noms of fruits){console.log(noms)}
