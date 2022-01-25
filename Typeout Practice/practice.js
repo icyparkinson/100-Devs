@@ -300,16 +300,24 @@
 
 // for (const noms of fruits){console.log(noms)}
 
-let nums = [1, 2, 3]
-nums.forEach((item, i) => {
-    nums[i] = item + 3 })
+// let nums = [1, 2, 3]
+// nums.forEach((item, i) => {
+//     nums[i] = item + 3 })
 
-    console.log(nums)
+//     console.log(nums)
 
-    let x=0
-for (let i=0; i<nums.length; i++){
+//     let x=0
+// for (let i=0; i<nums.length; i++){
        
-        x += nums[i]
-    } 
+//         x += nums[i]
+//     } 
     
-    console.log(x/nums.length)
+//     console.log(x/nums.length)
+
+let pets = ["cat", "dog", "bunny", "pig", "fox"]
+for (let i = 0; i < pets.length; i++){
+    console.log(pets[i])
+}
+
+
+
