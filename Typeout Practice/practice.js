@@ -314,10 +314,91 @@
     
 //     console.log(x/nums.length)
 
-let pets = ["cat", "dog", "bunny", "pig", "fox"]
-for (let i = 0; i < pets.length; i++){
-    console.log(pets[i])
+// let pets = ["cat", "dog", "bunny", "pig", "fox"]
+// for (let i = 0; i < pets.length; i++){
+//     console.log(pets[i])
+// }
+
+// pets.forEach((item) => {
+//     console.log(item)
+// })
+
+
+// const calculateArea = (height, width) => {
+//     const area = width * height
+//     return area
+// }
+
+
+// let fruits = ["apples", "bananas", "grapes", "oranges"]
+// for (let i = 0; i < fruits.length; i++){
+//     console.log(fruits[i])
+// }
+
+// for (let noms of fruits){console.log(noms)}
+
+
+
+
+// document.querySelector("#check").addEventListener("click", check)
+
+
+
+
+// function pow(x,n){
+//     let result = x
+//     for (let i=1; i<n; i++){
+//         result *= x
+//         console.log(result)
+//     }
+// }
+
+// pow(2,3)
+
+// const sumNumbers = number => number + number
+
+// function purpleParty(){
+//     document.querySelector("body").style.background="purple"
+// }
+
+
+// for (const cuties of animals){console.log(cuties)}
+
+// for (const nomnoms of fruits){console.log(nomnoms)}
+
+
+// let movies = ["movie1", "movie2", "movie3"]
+
+// movies.forEach((item,i) => {
+//     document.querySelector("h2").innerText += item
+// })
+
+// for (let i = 0; i < movies.length; i++){
+//     document.querySelector("h2").innerText += movies[i]
+// }
+
+
+let nums = [1,2,3,4,5]
+let newArray = []
+
+function getEven(){
+    for (let i = 0; i < nums.length; i++){
+        if (nums[i] % 2 === 0){
+            newArray.push(nums[i])
+        }
+    }
+}
+getEven()
+
+console.log(newArray)
+
+function getEvenWithEach(){
+    nums.forEach((item, i) =>{
+        if (item%2 === 0){
+            newArray.push(item)
+        }
+    })
 }
 
-
-
+getEvenWithEach()
+console.log(newArray)
