@@ -378,27 +378,66 @@
 // }
 
 
+// let nums = [1,2,3,4,5]
+// let newArray = []
+
+// function getEven(){
+//     for (let i = 0; i < nums.length; i++){
+//         if (nums[i] % 2 === 0){
+//             newArray.push(nums[i])
+//         }
+//     }
+// }
+// getEven()
+
+// console.log(newArray)
+
+// function getEvenWithEach(){
+//     nums.forEach((item, i) =>{
+//         if (item%2 === 0){
+//             newArray.push(item)
+//         }
+//     })
+// }
+
+// getEvenWithEach()
+// console.log(newArray)
+
+let animals = ["dog", "cat", "rabbit", "mouse"]
+for (const cuties of animals){console.log(cuties)}
+
 let nums = [1,2,3,4,5]
-let newArray = []
+// let product = 1
+// for (let i = 0; i < nums.length; i++){
+//     product *= nums[i]
+// }
+// console.log(product)
 
-function getEven(){
-    for (let i = 0; i < nums.length; i++){
-        if (nums[i] % 2 === 0){
-            newArray.push(nums[i])
-        }
-    }
-}
-getEven()
+// nums.forEach((item,i) => {
+//     product *= item
+// })
 
-console.log(newArray)
+// console.log(product)
 
-function getEvenWithEach(){
-    nums.forEach((item, i) =>{
-        if (item%2 === 0){
-            newArray.push(item)
-        }
-    })
-}
+// newArray = []
+// function onlyEven(){
+//     for (let i = 0; i < nums.length; i++){
+//         if (nums[i]%2 === 0){
+//             newArray.push(nums[i])
+//         }
+//     }
+// }
 
-getEvenWithEach()
-console.log(newArray)
+// onlyEven()
+// console.log(newArray)
+
+// function forEven(){
+//     nums.forEach((item, i) => {
+//         if (item%2===0){
+//             newArray.push(item)
+//         }
+//     })
+// }
+
+// forEven()
+// console.log(newArray)
