@@ -403,11 +403,11 @@
 // getEvenWithEach()
 // console.log(newArray)
 
-let animals = ["dog", "cat", "rabbit", "mouse"]
-for (const cuties of animals){console.log(cuties)}
+// let animals = ["dog", "cat", "rabbit", "mouse"]
+// for (const cuties of animals){console.log(cuties)}
 
-let nums = [1,2,3,4,5]
-// let product = 1
+// let nums = [1,2,3,4,5]
+// // let product = 1
 // for (let i = 0; i < nums.length; i++){
 //     product *= nums[i]
 // }
@@ -441,3 +441,39 @@ let nums = [1,2,3,4,5]
 
 // forEven()
 // console.log(newArray)
+
+// let animals = ["dog", "cat", "bunny", "panda"]
+// animals.forEach((item, i) => {
+//   console.log(item)
+// }
+  
+// );
+
+
+
+// let hash = "#"
+// for (let i = 1; i <= 7; i++){
+//   console.log(hash)
+//   hash = hash + "#"
+// }
+// let arr = [1,2,3,4,5]
+// let newArray = []
+// function takeNumbers(){
+  
+//   for (let i = 0; i < arr.length; i++){
+//     if (arr[i]%2===0){
+//       newArray.push(arr[i])
+//     }
+//   } console.log(newArray)
+// }
+// takeNumbers()
+
+let listOfNums = [1,2,3,4,5]
+product = 1
+function getProduct(arr){
+  for (let i = 0; i < arr.length; i++){
+    product *= arr[i]
+  } console.log(product)
+}
+
+getProduct(listOfNums)
