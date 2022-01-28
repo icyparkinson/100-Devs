@@ -469,11 +469,35 @@
 // takeNumbers()
 
 let listOfNums = [1,2,3,4,5]
-product = 1
-function getProduct(arr){
-  for (let i = 0; i < arr.length; i++){
-    product *= arr[i]
-  } console.log(product)
-}
+// product = 1
+// function getProduct(arr){
+//   for (let i = 0; i < arr.length; i++){
+//     product *= arr[i]
+//   } console.log(product)
+// }
 
-getProduct(listOfNums)
+// getProduct(listOfNums)
+
+// const product = listOfNums.reduce((currentProduct, item) => {
+//   return item * currentProduct
+// }, 1)
+
+// console.log(product)
+
+// function pow(x,n){
+// let result = x
+// for (let i = 1; i < n; i++){
+//   result *= x
+//   console.log(result)
+// }
+// }
+
+// pow(2,3)
+
+let sorted = arr.sort((a,b) => a-b)
+
+const product = listOfNums.reduce((currentProduct, item) => {
+  return currentProduct * item
+}, 1)
+
+let sorted = arr.sort((a,b) => a-b)
