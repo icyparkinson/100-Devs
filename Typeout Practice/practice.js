@@ -501,3 +501,8 @@ const product = listOfNums.reduce((currentProduct, item) => {
 }, 1)
 
 let sorted = arr.sort((a,b) => a-b)
+
+const calculateArea = (width, height) => {
+  const area = width * height
+  return area
+}
