@@ -494,15 +494,37 @@ let listOfNums = [1,2,3,4,5]
 
 // pow(2,3)
 
-let sorted = arr.sort((a,b) => a-b)
+// let sorted = arr.sort((a,b) => a-b)
 
-const product = listOfNums.reduce((currentProduct, item) => {
-  return currentProduct * item
-}, 1)
+// const product = listOfNums.reduce((currentProduct, item) => {
+//   return currentProduct * item
+// }, 1)
 
-let sorted = arr.sort((a,b) => a-b)
+// let sorted = arr.sort((a,b) => a-b)
 
-const calculateArea = (width, height) => {
-  const area = width * height
-  return area
+// const calculateArea = (width, height) => {
+//   const area = width * height
+//   return area
+// }
+
+let candy = ["mars", "oreos", "candy"]
+for (const sweets of candy){console.log(sweets)}
+
+function evenOnly(arr){
+  let newArray = []
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i]%2===0){
+      newArray.push(arr[i])
+    }
+  } console.log(newArray)
 }
+let arr = [1,2,3,4,5]
+evenOnly(arr)
+
+
+let kwee = arr.sort((a,b) => a-b)
+
+let woot = arr.reduce((difference, item) => {
+  return difference - item},0)
+
+  console.log(woot)
