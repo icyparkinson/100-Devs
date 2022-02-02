@@ -530,23 +530,42 @@ let listOfNums = [1,2,3,4,5]
 //   console.log(woot)
 
 
-function multNums(arr){
-  let product = arr.reduce((current, item) => current * item, 1)
-  console.log(product)
+// function multNums(arr){
+//   let product = arr.reduce((current, item) => current * item, 1)
+//   console.log(product)
+// }
+
+// multNums([2,4,5])
+
+
+// let nums = [1,2,3,4]
+// nums.forEach((value, index) => console.log(value))
+
+
+// const sumNumbers = number => number + number
+
+// function convertsReverse(str){
+//   let reversed = str.split("").reverse().join("")
+//   console.log(reversed)
+// }
+
+// convertsReverse("howdy")
+
+function disemvowel(str){
+  let newString = ""
+  let vowels = {
+    "a" : true,
+    "e" : true,
+    "i" : true,
+    "o" : true,
+    "u" : true,
+  }
+  for (let i=0; i<str.length; i++){
+    let letter = str[i].toLowerCase()
+    if (!vowels[letter]){
+      newString+= str[i]
+    }
+  }console.log(newString)
 }
 
-multNums([2,4,5])
-
-
-let nums = [1,2,3,4]
-nums.forEach((value, index) => console.log(value))
-
-
-const sumNumbers = number => number + number
-
-function convertsReverse(str){
-  let reversed = str.split("").reverse().join("")
-  console.log(reversed)
-}
-
-convertsReverse("howdy")
+disemvowel("hello")
