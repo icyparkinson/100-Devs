@@ -180,3 +180,15 @@ body{
         font-size: 30px;
         
         }
+
+    #zero{
+        border-radius: 0 0 0 20px;
+    }
+
+    #equal{
+        border-radius: 0 0 20px 0;
+    }
+
+    #display{
+        border-radius: 20px 20px 0 0;
+    }
