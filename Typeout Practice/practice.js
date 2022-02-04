@@ -551,21 +551,28 @@ let listOfNums = [1,2,3,4,5]
 
 // convertsReverse("howdy")
 
-function disemvowel(str){
-  let newString = ""
-  let vowels = {
-    "a" : true,
-    "e" : true,
-    "i" : true,
-    "o" : true,
-    "u" : true,
-  }
-  for (let i=0; i<str.length; i++){
-    let letter = str[i].toLowerCase()
-    if (!vowels[letter]){
-      newString+= str[i]
-    }
-  }console.log(newString)
-}
+// function disemvowel(str){
+//   let newString = ""
+//   let vowels = {
+//     "a" : true,
+//     "e" : true,
+//     "i" : true,
+//     "o" : true,
+//     "u" : true,
+//   }
+//   for (let i=0; i<str.length; i++){
+//     let letter = str[i].toLowerCase()
+//     if (!vowels[letter]){
+//       newString+= str[i]
+//     }
+//   }console.log(newString)
+// }
 
-disemvowel("hello")
+// disemvowel("hello")
+
+
+let nums = [1,2,3,4,5]
+console.log(nums)
+let mini = Math.min(...nums)
+let max = Math.max(...nums)
+return(`${max} ${mini}`)
