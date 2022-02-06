@@ -38,13 +38,11 @@ border: 2px solid black;
 
 .topper{
     display: flex;
-    flex-direction: row;
     justify-content: center;
 }
 
 .quad{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -86,9 +84,7 @@ border: 2px solid black;
 .quint{
     height: 200px;
     width: 100px;
-    display: flex;
     border: 2px solid green;
-    flex-wrap: wrap;
 }
 
 .quint:nth-child(3){
