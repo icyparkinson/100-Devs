@@ -571,8 +571,93 @@ let listOfNums = [1,2,3,4,5]
 // disemvowel("hello")
 
 
+// let nums = [1,2,3,4,5]
+// console.log(nums)
+// let mini = Math.min(...nums)
+// let max = Math.max(...nums)
+// return(`${max} ${mini}`)
+
+// function pow(x,n){
+//     let result = x
+//     for (let i = 1; i < n; i++){
+//         result *= x
+//     } console.log(result)
+// }
+// pow(2,3)
+
+// function reversifyStr(str){
+//     let newStr = str.split("").reverse().join("")
+//     console.log((newStr))
+// }
+
+// reversifyStr("Hello")
+
+
+// let sorted = arr.sort((a,b) => a-b)
+
+// function randomize(){
+//     let random = Math.floor(Math.random() * nums.length)
+//     console.log(nums[random])
+// }
+
+// randomize()
+
+
+// let size = 8
+// let board = ""
+// function addHash(){
+//     for (let x=0; x<size; x++){
+//         for (let y=0; y<size; y++){
+//             if ((x+y)%2===0){
+//                 board += " "
+//             } else{
+//                 board += "#"
+//             }
+//         }board += "\n"
+//     } console.log(board)
+// }
+
+// addHash()
+
+// nameOfArray.pop()
+
+// function newArray(arr){
+//     let newArr = []
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i]%2 ===0){
+//             newArr.push(arr[i])
+//         }
+//     } console.log (newArr)
+// }
+
+// newArray(nums)
+
+
+// for (const number of nums){
+//     console.log(number)
+// }
+
+// let reduced = nums.reduce((acc, c) => acc * c,1)
+// console.log(reduced)
+
+
+// sorted = nums.sort((a,b) => b-a)
+// console.log(sorted)
+
+// function digitize(n) {
+//     let x = n.toString()
+//     let strX = (x.split("").reverse())
+//     let numX = strX.map(str => Number(str))
+//     return numX
+//   }
+
+//   console.log(digitize(89))
+
 let nums = [1,2,3,4,5]
-console.log(nums)
-let mini = Math.min(...nums)
-let max = Math.max(...nums)
-return(`${max} ${mini}`)
+
+function reduction(arr){
+
+let sum = arr.reduce((acc, c) => acc + c, 0)
+console.log(sum)}
+
+reduction(nums)
