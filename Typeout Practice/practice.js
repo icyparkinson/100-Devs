@@ -653,11 +653,37 @@ let listOfNums = [1,2,3,4,5]
 
 //   console.log(digitize(89))
 
-let nums = [1,2,3,4,5]
+// let nums = [1,2,3,4,5]
 
-function reduction(arr){
+// function reduction(arr){
 
-let sum = arr.reduce((acc, c) => acc + c, 0)
-console.log(sum)}
+// let sum = arr.reduce((acc, c) => acc + c, 0)
+// console.log(sum)}
 
-reduction(nums)
+// reduction(nums)
+
+
+// const CalculateArea = (width, height) => {
+//   const area = width * height
+//   return area
+// }
+
+// let sorted = nums.sort((a,b) => a-b)
+
+// nums.forEach(item => {
+//   console.log(item)
+// })
+
+for (let i = 1; i < 20; i++){
+  if (i%3 === 0 && i%5 ===0){
+    console.log("FizzBuzz")}
+    else if (i%3 === 0){
+      console.log("Fizz")
+    }
+    else if (i%5 === 0){
+      console.log("Buzz")
+    }
+    else{
+      console.log(i)
+    }
+  }
