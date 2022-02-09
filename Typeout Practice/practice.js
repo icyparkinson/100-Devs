@@ -674,16 +674,28 @@ let listOfNums = [1,2,3,4,5]
 //   console.log(item)
 // })
 
-for (let i = 1; i < 20; i++){
-  if (i%3 === 0 && i%5 ===0){
-    console.log("FizzBuzz")}
-    else if (i%3 === 0){
-      console.log("Fizz")
-    }
-    else if (i%5 === 0){
-      console.log("Buzz")
-    }
-    else{
-      console.log(i)
-    }
-  }
+// for (let i = 1; i < 20; i++){
+//   if (i%3 === 0 && i%5 ===0){
+//     console.log("FizzBuzz")}
+//     else if (i%3 === 0){
+//       console.log("Fizz")
+//     }
+//     else if (i%5 === 0){
+//       console.log("Buzz")
+//     }
+//     else{
+//       console.log(i)
+//     }
+//   }
+
+
+function findSmallestInt(arr){
+  let mini = Infinity
+ for (let i = 0; i < arr.length; i++){
+  if ((arr[i]) < mini){
+    mini = (arr[i])
+  } 
+ } console.log(mini)
+}
+
+findSmallestInt([2,4,6,1,-5])
