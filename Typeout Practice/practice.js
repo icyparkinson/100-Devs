@@ -653,7 +653,7 @@ let listOfNums = [1,2,3,4,5]
 
 //   console.log(digitize(89))
 
-// let nums = [1,2,3,4,5]
+let nums = [1,2,3,4,5]
 
 // function reduction(arr){
 
@@ -689,13 +689,21 @@ let listOfNums = [1,2,3,4,5]
 //   }
 
 
-function findSmallestInt(arr){
-  let mini = Infinity
- for (let i = 0; i < arr.length; i++){
-  if ((arr[i]) < mini){
-    mini = (arr[i])
-  } 
- } console.log(mini)
-}
+// function findSmallestInt(arr){
+//   let mini = Infinity
+//  for (let i = 0; i < arr.length; i++){
+//   if ((arr[i]) < mini){
+//     mini = (arr[i])
+//   } 
+//  } console.log(mini)
+// }
 
-findSmallestInt([2,4,6,1,-5])
+// findSmallestInt([2,4,6,1,-5])
+
+
+// let sorted = arr.sort((a,b)=> (a-b))
+
+// let reversed = array.split("").reverse().join("")
+
+
+console.log(nums.reduce((acc, c) => acc + c,0))
