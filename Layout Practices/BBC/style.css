@@ -39,31 +39,54 @@ header {
   background: black;
 }
 
-nav *{
-  /* border: 1px solid red; */
-  float: left;
-  width: 10%;
+nav{
   color: white;
-  display: block;
+  /* border: 5px solid red; */
+  padding-top: 10px;
+  text-align: center;
+}
 
+nav img{
+  float: left;
+  margin-left: 20px;
+  /* margin-top: 3px; */
 }
 
 nav ul{
-  width: 50%
+  /* border: 3px solid green; */
+  width: 100%;
+  margin-top: 0;
+  display: inline;
+}
+
+nav li{
+  display: inline-block;
+  border-left: 2px solid white;
+  width: 7%;
 }
 
 nav a{
-  text-decoration: none;
   color: white;
+  text-decoration: none;
+  margin: 0 auto;
 }
 
 nav form{
   width: 20%;
+  margin-left: 100px;
+  display: inline;
+}
+
+
+/*
+nav img{
+  margin: 20px 0 0 10px;
+  display: inline;
 }
 
 nav form input{
-  width: 100%;
-}
+  width: 100%; */
+/* } */
 
 .left, .right {
   width: 50%;
@@ -80,6 +103,11 @@ nav form input{
   color: white;
   background-color: rgba(0,0,0,0.25);
   background-blend-mode: overlay;
+}
+
+.top > h2{
+  border-left: 4px solid red;
+  padding-left: 10px;
 }
 
 .left span, .third span{
@@ -164,11 +192,29 @@ div{
   clear: both;
 }
 
+span{
+  text-transform: uppercase;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
 
-span{
-  text-transform: uppercase;
+@media screen and (max-width: 600px){
+  .left, .right{
+    width: 100%;
+  }
+
+  #reel, #worklife, #travel, #future, #culture{
+    display: none;
+  }
+
+  .third{
+    width: 100%;
+  }
+
+  input{
+    display: none;
+  }
 }
