@@ -49,7 +49,7 @@ nav{
 nav img{
   float: left;
   margin-left: 20px;
-  /* margin-top: 3px; */
+  height: 30px;
 }
 
 nav ul{
@@ -62,7 +62,13 @@ nav ul{
 nav li{
   display: inline-block;
   border-left: 2px solid white;
-  width: 7%;
+  width: 6%;
+}
+
+#sign{
+  float: left;
+  margin-top: 5px;
+  margin-left: 2px;
 }
 
 nav a{
@@ -76,17 +82,6 @@ nav form{
   margin-left: 100px;
   display: inline;
 }
-
-
-/*
-nav img{
-  margin: 20px 0 0 10px;
-  display: inline;
-}
-
-nav form input{
-  width: 100%; */
-/* } */
 
 .left, .right {
   width: 50%;
@@ -202,19 +197,84 @@ span{
 
 
 @media screen and (max-width: 600px){
+
+  nav ul{
+    position: relative;
+    right: 40px;
+    top: 5px;
+  }
+
   .left, .right{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .right > section{
     width: 100%;
   }
 
-  #reel, #worklife, #travel, #future, #culture{
+  #reel, #worklife, #travel, #future, #culture, #sign{
     display: none;
+  }
+
+  .top + section{
+    position: relative;
+    top: 350px;
   }
 
   .third{
     width: 100%;
   }
 
+  li{
+    margin: 0 10px;
+    padding-left: 10px;
+  }
+
+  li a{
+    font-size: 12px;
+  }
+
   input{
     display: none;
   }
+}
+
+@media (min-width:601px) and (max-width: 800px){
+
+  nav ul{
+    position: relative;
+    right: 80px;
+    top: 5px;
+  }
+
+  #home, #worklife, #travel, #future, #culture{
+    display: none;
+  }
+
+  li{
+    margin: 0 10px;
+    padding-left: 10px;
+  }
+
+  li a{
+    font-size: 12px;
+  }
+
+  form{
+    margin-left: 0;
+  }
+
+  input{
+    position: relative;
+    left: 70px;
+    bottom: 15px;
+    width: 15%;
+  }
+
+  .left, .right{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
 }
