@@ -37,12 +37,16 @@ header {
     text-align: center;
 }
 
+#list{
+    display: none;
+}
+
 header span{
     float: left;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 900;
     margin-top: 5px;
-    width: 10%;
+    width: 105px;
     color:rgb(54, 69, 88);
 }
 
@@ -56,8 +60,8 @@ header nav{
 header button{
     display: table-cell;
     vertical-align: middle;
-    width: 10%;
-    height: 40%;
+    width: 140px;
+    height: 25px;
     float: right;
 }
 
@@ -93,7 +97,7 @@ h1{
 }
 
 .topLeft button{
-    width: 30%;
+    width: 140px;
 }
 
 .topRight{
@@ -105,7 +109,7 @@ h1{
 }
 
 .quad section{
-    height: 300px;
+    height: 100%;
     width: 25%;
     padding: 40px 90px;
     /* border: 2px solid blue; */
@@ -139,12 +143,21 @@ h1{
     text-decoration: none;
 }
 
+
+
 .bottom {
-    height: 270px;
-    /* border: 2px solid green; */
-    padding: 20px 870px 0 100px;
+    height: 100%;
+    width: 100%;
     clear: both;
     background: white;
+}
+
+.collecting{
+    width: 600px;
+    background: white;
+    height: 100%;
+    padding-left: 80px;
+    padding-top: 30px;
 }
 
 .bottom h2{
@@ -160,3 +173,91 @@ h1{
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media screen and (max-width: 1380px){
+    .quad section{
+        padding: 40px 60px;
+    }
+}
+
+@media screen and (max-width: 1210px){
+    .top section{
+        padding-right: 75px;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .quad section{
+        padding: 40px 30px;
+    }
+}
+
+@media screen and (max-width: 970px){
+    .top section{
+        padding-right: 50px;
+    }
+
+    .topLeft h1{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .topLeft h1{
+        font-size: 30px;
+    }
+
+    .quad section{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    #list{
+        color: black;
+        font-size: 30px;
+        display: contents;
+        border-bottom: 2px solid lightgray;
+    }
+
+    header button, nav ul{
+        display: none;
+    }
+
+    header nav{
+        width: 100%;
+        border-bottom: 2px solid lightgray;
+    }
+    header{
+        width: 100%;
+    }
+
+    #spany{
+        display: flex;
+    }
+
+    #title{
+        font-size: 40px;
+        width: 100%;
+        margin-right: 60px;
+    }
+
+    .topLeft, .topRight{
+        width: 100%;
+    }
+
+    .top section{
+        height: 350px;
+        padding-left: 40px;
+    }
+
+    .quad section{
+        width: 100%;
+    }
+
+    .collecting{
+        width: 100%;
+        padding-right: 40px;
+    }
+}
