@@ -46,7 +46,7 @@ main{
 }
 
 .summary, .gist{
-    height: 800px;
+    height: 100%;
     width: 50%;
     float: left;
     /* border: 4px solid pink; */
@@ -56,7 +56,7 @@ main{
 }
 
 .buttonpad{
-    padding-bottom: 80px;
+    /* padding-bottom: 80px; */
 }
 
 .gist{
@@ -65,13 +65,13 @@ main{
 }
 
 .page, .pageend{
-    height: 300px;
+    height: 100%;
     /* border: 2px solid orange; */
     clear: both;
     background: rgb(249,248,251);
     text-align: center;
     padding-top: 40px;
-    margin: 0 350px;
+    margin: 0 20%;
     font-size: 20px;
 }
 
@@ -122,6 +122,12 @@ body{
 
 header > img{
     float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#list{
+    display: none;
 }
 
 .upper{
@@ -250,30 +256,35 @@ div>button{
 
 
 .pageend{
-    height: 200px;
+    height: 100%;
+    padding-bottom: 50px;
     width: 100%;
     background-image: url("pushtopbg.png");
     background-repeat: no-repeat;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
-.pageend > h5, .pageend > h5 + p{
+.pageend h5, .pageend h5 + p{
     text-align: left;
     line-height: 3px;
-    padding-left: 360px;
+    padding-left: 20%;
     color: rgb(124,126,134);
 }
 
-.pageend > h5 + p{
+.pageend h5 + p{
     color: white;
     font-size: 25px;
 }
 
-.pageend button{
-    position: relative;
-    float: right;
-    bottom: 60px;
-    right: 450px;
+.endLeft{
+    width: 50%;
+}
+
+.love{
+    margin-bottom: 50px;
 }
 
 th, footer>section>h5{
@@ -297,6 +308,66 @@ th, footer>section>h5{
         width: 100%;
     }
     .summary{
-        height: 600px;
+        height: 100%;
+        margin-bottom: 50px;
+    }
+    .page{
+        margin-bottom: 50px;
+    }
+
+    .love{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 1255px){
+    footer img{
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    footer{
+        font-size: 70%;
+    }
+    .col1{
+        padding: 25px 20px;
+    }
+}
+
+@media screen and (max-width: 870px){
+    .pageend{
+        flex-direction: column;
+        align-items: center;
+    }
+    .endLeft{
+        width: 100%;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    #list{
+        display: contents;
+        color: white;
+        font-size: 30px;
+    }
+
+    header span{
+        float: right;
+        margin-right: 40px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 715px){
+    .col1{
+        width: 100%;
+        height: 100%;
+        padding: 0 30px;
+    }
+    .col2{
+        width: 100%;
     }
 }
