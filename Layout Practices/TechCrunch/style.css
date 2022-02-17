@@ -90,9 +90,8 @@ html{
 
   main > section+section{
     width: 40%;
-    height: 800px;
+    height: 100%;
     float: left;
-    overflow: auto;
   }
 
   main section p{
@@ -274,3 +273,14 @@ h3{
     height: 250px;
   }
 }
+
+/* @media screen and (max-width: 750px){
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  main section{
+    height: 100%;
+  }
+} */

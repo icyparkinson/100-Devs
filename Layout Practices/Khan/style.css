@@ -12,6 +12,10 @@ nav{
     border-bottom: 1px solid lightgray;
 }
 
+#list{
+    display: none;
+}
+
 form{
     display: inline;
     margin-left: 50px;
@@ -79,4 +83,40 @@ button{
     margin: 3px;
     padding: 0;
     border: none;
+}
+
+@media screen and (max-width: 1220px){
+    main{
+        flex-direction: column;
+    }
+
+    main section{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 835px){
+    form, nav div, nav ul{
+        display: none;
+    }
+
+    #list{
+        display: contents;
+        font-size: 30px;
+        color: rgb(62,100,234);
+    }
+
+    nav span{
+
+    }
+
+    nav{
+        align-items: flex-start;
+        height: 80px;
+    }
+
+    nav img{
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
 }
