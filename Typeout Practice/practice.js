@@ -706,4 +706,74 @@ let nums = [1,2,3,4,5]
 // let reversed = array.split("").reverse().join("")
 
 
-console.log(nums.reduce((acc, c) => acc + c,0))
+// console.log(nums.reduce((acc, c) => acc + c,0))
+
+// let sorted = arr.sort((a,b)=> (a-b))
+
+
+// function pow(x,n){
+//     let result = x
+//     for (let i = 1; i < n; i++){
+//         result *= x
+//     } console.log(result)
+// }
+
+// pow(2,4)
+
+let numbers = [2, 5, 9, 10]
+
+// numbers.forEach(value=>{
+//     console.log(value)
+// })
+
+
+// document.getElementById("purple").addEventListener("click", purpleParty)
+
+// `${fName}, ${lName}`
+// let newArray = []
+// numbers.forEach(value=>{
+    
+//     if (value%2===0){
+//         newArray.push(value)
+//     }}
+// )
+
+// console.log(newArray)
+
+
+// for (qty of numbers){console.log(qty)}
+
+let size = 8
+let grid=""
+
+function makeChess(){
+for (let x = 0; x<size; x++){
+    for (let y = 0; y<size; y++){
+        if ((x+y)%2===0){
+            grid+=" "
+        }
+        else{
+            grid+="#"
+        }
+    } grid +="\n"
+}console.log(grid)
+}
+
+makeChess()
+
+
+// let size = 8
+// let board = ""
+// function addHash(){
+//     for (let x=0; x<size; x++){
+//         for (let y=0; y<size; y++){
+//             if ((x+y)%2===0){
+//                 board += " "
+//             } else{
+//                 board += "#"
+//             }
+//         }board += "\n"
+//     } console.log(board)
+// }
+
+// addHash()
