@@ -743,23 +743,23 @@ let numbers = [2, 5, 9, 10]
 
 // for (qty of numbers){console.log(qty)}
 
-let size = 8
-let grid=""
+// let size = 8
+// let grid=""
 
-function makeChess(){
-for (let x = 0; x<size; x++){
-    for (let y = 0; y<size; y++){
-        if ((x+y)%2===0){
-            grid+=" "
-        }
-        else{
-            grid+="#"
-        }
-    } grid +="\n"
-}console.log(grid)
-}
+// function makeChess(){
+// for (let x = 0; x<size; x++){
+//     for (let y = 0; y<size; y++){
+//         if ((x+y)%2===0){
+//             grid+=" "
+//         }
+//         else{
+//             grid+="#"
+//         }
+//     } grid +="\n"
+// }console.log(grid)
+// }
 
-makeChess()
+// makeChess()
 
 
 // let size = 8
@@ -777,3 +777,5 @@ makeChess()
 // }
 
 // addHash()
+
+for (item of numbers){console.log(item)}
