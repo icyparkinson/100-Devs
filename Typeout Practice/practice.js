@@ -778,4 +778,15 @@ let numbers = [2, 5, 9, 10]
 
 // addHash()
 
-for (item of numbers){console.log(item)}
+// for (item of numbers){console.log(item)}
+
+// function purpleParty(){
+//     document.querySelector("body").style.backgroundColor=purple;
+// }
+
+function multiNums(arr){
+    let five = arr.reduce((acc, c) => acc * c, 1)
+    console.log(five)
+}
+
+multiNums(numbers)
