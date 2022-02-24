@@ -784,9 +784,13 @@ let numbers = [2, 5, 9, 10]
 //     document.querySelector("body").style.backgroundColor=purple;
 // }
 
-function multiNums(arr){
-    let five = arr.reduce((acc, c) => acc * c, 1)
-    console.log(five)
-}
+// function multiNums(arr){
+//     let five = arr.reduce((acc, c) => acc * c, 1)
+//     console.log(five)
+// }
 
-multiNums(numbers)
+// multiNums(numbers)
+
+for (items of numbers){console.log(items)}
+
+numbers.sort(a,b)=> (a-b)
