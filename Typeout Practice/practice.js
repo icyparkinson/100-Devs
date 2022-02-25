@@ -791,6 +791,8 @@ let numbers = [2, 5, 9, 10]
 
 // multiNums(numbers)
 
-for (items of numbers){console.log(items)}
+// for (items of numbers){console.log(items)}
 
-numbers.sort(a,b)=> (a-b)
+console.log(numbers.sort((a,b) => b-a))
+
+document.querySelector(.check).onClick("check")
