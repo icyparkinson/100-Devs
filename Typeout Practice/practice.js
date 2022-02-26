@@ -795,4 +795,9 @@ let numbers = [2, 5, 9, 10]
 
 console.log(numbers.sort((a,b) => b-a))
 
-document.querySelector(.check).onClick("check")
+document.querySelector(".check").addEventListener("click", check)
+
+const calculateArea = (width, height) => {
+    const area = width * height
+    return area
+}
