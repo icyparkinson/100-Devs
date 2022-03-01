@@ -802,11 +802,46 @@ let numbers = [2, 5, 9, 10]
 //     return area
 // }
 
-const calculateArea = (width, height) => {
-    const area = width * height
-    return area
-}
+// const calculateArea = (width, height) => {
+//     const area = width * height
+//     return area
+// }
 
-let fruits = ["apples", "oranges", "bananas"]
+// let fruits = ["apples", "oranges", "bananas"]
 
-fruits.forEach (item => console.log(item))
+// fruits.forEach (item => console.log(item))
+
+console.log("dog")
+
+function chess(){
+let grid = ""
+let size = 8
+    for (let x=0; x<size; x++){
+        for (let y=0; y<size; y++){
+            if ((x+y)%2===0){
+                grid += "#"
+            }
+            else{
+                grid += " "
+            }
+        }  grid += "\n"
+    } console.log(grid)
+} 
+
+chess()
+
+
+let animals = ["dogs", "cats", "mice"]
+animals.forEach(pet => console.log(pet))
+
+for (const pet of animals){console.log (pet)}
+
+let van = [2,5,6]
+let vanR = van.reduce((acc, c) =>{
+    return acc + c
+}, 0)
+
+console.log(vanR)
+
+for (const numbers of animals){console.log(numbers)}
+
