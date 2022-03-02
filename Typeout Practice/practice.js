@@ -793,11 +793,20 @@ let numbers = [2, 5, 9, 10]
 
 // for (items of numbers){console.log(items)}
 
-console.log(numbers.sort((a,b) => b-a))
+// console.log(numbers.sort((a,b) => b-a))
 
-document.querySelector(".check").addEventListener("click", check)
+// document.querySelector(".check").addEventListener("click", check)
+
+// const calculateArea = (width, height) => {
+//     const area = width * height
+//     return area
+// }
 
 const calculateArea = (width, height) => {
     const area = width * height
     return area
 }
+
+let fruits = ["apples", "oranges", "bananas"]
+
+fruits.forEach (item => console.log(item))
