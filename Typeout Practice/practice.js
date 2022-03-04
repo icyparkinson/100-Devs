@@ -811,37 +811,60 @@ let numbers = [2, 5, 9, 10]
 
 // fruits.forEach (item => console.log(item))
 
-console.log("dog")
+// console.log("dog")
 
-function chess(){
-let grid = ""
-let size = 8
-    for (let x=0; x<size; x++){
-        for (let y=0; y<size; y++){
-            if ((x+y)%2===0){
-                grid += "#"
-            }
-            else{
-                grid += " "
-            }
-        }  grid += "\n"
-    } console.log(grid)
-} 
+// function chess(){
+// let grid = ""
+// let size = 8
+//     for (let x=0; x<size; x++){
+//         for (let y=0; y<size; y++){
+//             if ((x+y)%2===0){
+//                 grid += "#"
+//             }
+//             else{
+//                 grid += " "
+//             }
+//         }  grid += "\n"
+//     } console.log(grid)
+// } 
 
-chess()
+// chess()
 
 
-let animals = ["dogs", "cats", "mice"]
-animals.forEach(pet => console.log(pet))
+// let animals = ["dogs", "cats", "mice"]
+// animals.forEach(pet => console.log(pet))
 
-for (const pet of animals){console.log (pet)}
+// for (const pet of animals){console.log (pet)}
 
-let van = [2,5,6]
-let vanR = van.reduce((acc, c) =>{
-    return acc + c
-}, 0)
+// let van = [2,5,6]
+// let vanR = van.reduce((acc, c) =>{
+//     return acc + c
+// }, 0)
 
-console.log(vanR)
+// console.log(vanR)
 
-for (const numbers of animals){console.log(numbers)}
+// for (const numbers of animals){console.log(numbers)}
 
+let numberList = [2, -45, 6, 20]
+let newList = []
+
+// function min(list){
+//     return(Math.min(...list))
+// }
+
+// function max(list){
+//     return(Math.max(...list))
+// }
+
+function findAverage(array){
+    if (array.length===0){
+      return 0
+    } else{
+      let sum = array.reduce((acc,c) => 
+      acc + c, 0)
+      let average = sum/array.length
+      return average
+      }
+  }
+
+console.log(findAverage(newList))
