@@ -856,15 +856,30 @@ let newList = []
 //     return(Math.max(...list))
 // }
 
-function findAverage(array){
-    if (array.length===0){
-      return 0
-    } else{
-      let sum = array.reduce((acc,c) => 
-      acc + c, 0)
-      let average = sum/array.length
-      return average
-      }
-  }
+// function findAverage(array){
+//     if (array.length===0){
+//       return 0
+//     } else{
+//       let sum = array.reduce((acc,c) => 
+//       acc + c, 0)
+//       let average = sum/array.length
+//       return average
+//       }
+//   }
 
-console.log(findAverage(newList))
+// console.log(findAverage(newList))
+
+// function simpleMultiplication(number){
+//     if (number%2===0){
+//         number *= 8
+//     } else{
+//         number *= 9
+//     }
+//     return number
+
+    async function hello() {
+        return await Promise.resolve("Hello");
+      };
+      
+      hello().then(alert);
+      
