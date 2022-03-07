@@ -877,9 +877,22 @@ let newList = []
 //     }
 //     return number
 
-    async function hello() {
-        return await Promise.resolve("Hello");
-      };
+    // async function hello() {
+    //     return await Promise.resolve("Hello");
+    //   };
       
-      hello().then(alert);
+    //   hello().then(alert);
       
+
+    function takeYearGiveCent(year){
+      let cent = year/100
+      if (Number.isInteger(cent)){
+        console.log(cent)
+        console.log((Number.isInteger(cent)))
+      }
+      else{
+        console.log(Math.ceil(cent))
+      }
+    }
+
+    takeYearGiveCent(1900)
