@@ -925,25 +925,27 @@ let numbers = [2, 5, 9, 10]
     // console.log(zeroFuel(50,25,2))
 
 
-let alpha=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","s","t","u","w","x","y","z"]
+// let alpha=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","s","t","u","w","x","y","z"]
+
+//     function  isPangram(string){
+//       let lower = string.toLowerCase()
+//       console.log(lower)
+//       let broken = lower.split("")
+//       console.log(broken)
+//       let pan = alpha.every(x => lower.includes(x))
+//       console.log(pan)
+//     }
+//     isPangram("the quick brown fox jumps over the lazy dog")
+
+
+
 // let beta = "better".split("")
-
-    function  isPangram(string){
-      let lower = string.toLowerCase()
-      console.log(lower)
-      let broken = lower.split("")
-      console.log(broken)
-      let pan = alpha.every(x => lower.includes(x))
-      console.log(pan)
-    }
-
     // function isBeta(string){
     //   let test = string.toLowerCase()
     //   let betatest=beta.every(x => test.includes(x))
     //   console.log (betatest)
     // }
 
-    isPangram("the quick brown fox jumps over the lazy dog")
   //   isBeta("bette life")
 
   // let alpha = "abcdefghijklmnopqrstuvwxyz".split
@@ -953,3 +955,47 @@ let alpha=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","
   //   let pan = alpha.every(x => lower.includes(x))
   //   return pan
   // }
+
+// let myInput = ["apples", "bananas"]
+
+//   function input(array){
+//     if (myInput.includes("oranges")){
+//       myInput.push("hello")
+//     } else{
+//       myInput.push("goodbye")
+//     }
+//     console.log(myInput)
+//   }
+
+let testString = "ATTGC"
+
+function convertArray(string){
+  let stringToArray = string.split("")
+  return(stringToArray)
+}
+
+convertArray(testString)
+
+function DNAstrand(dna){
+  let output = []
+  for (let i = 0; i < dna.length; i++){
+    if (dna[i] === "A"){
+      output.push("T")
+    }
+    else if (dna[i] === "T"){
+      output.push("A")
+    }
+    else if (dna[i] === "C"){
+      output.push("G")
+    }
+    else if (dna[i] === "G"){
+      output.push("C")
+    }
+    else{
+      console.log(output)
+    }
+  } let finalOut = output.join("")
+  console.log(finalOut)
+} 
+
+DNAstrand(convertArray(testString))
