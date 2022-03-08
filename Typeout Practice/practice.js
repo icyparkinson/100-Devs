@@ -845,8 +845,8 @@ let numbers = [2, 5, 9, 10]
 
 // for (const numbers of animals){console.log(numbers)}
 
-let numberList = [2, -45, 6, 20]
-let newList = []
+// let numberList = [2, -45, 6, 20]
+// let newList = []
 
 // function min(list){
 //     return(Math.min(...list))
@@ -884,15 +884,72 @@ let newList = []
     //   hello().then(alert);
       
 
-    function takeYearGiveCent(year){
-      let cent = year/100
-      if (Number.isInteger(cent)){
-        console.log(cent)
-        console.log((Number.isInteger(cent)))
-      }
-      else{
-        console.log(Math.ceil(cent))
-      }
+    // function century(year) {
+    //   let cent = year/100
+    //   if (Number.isInteger(cent)){
+    //     return(cent)
+    //   }
+    //   else{
+    //     return(Math.ceil(cent))
+    //   }
+    // }
+
+    // let jumblyList = [1, 2, "a", "b", 3]
+
+    // let result = jumblyList.filter(value => Number.isInteger(value))
+    // return result
+
+    // function isTriangle(n1,n2,n3){
+    //   const isTriangle = (n1,n2,n3) => {
+    //   if ((n1+n2 >n3) && (n1+n3 > n2) && (n2+n3 > n1)){
+    //     return true
+    //   }
+    //   else{
+    //     return false
+    //   }
+    // }
+
+  
+
+    // console.log(isTriangle(7,2,2))
+
+    // const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    //   if (mpg * fuelLeft >= distanceToPump){
+    //     return true;
+    //   }
+    //   else{
+    //     return false;
+    //   }
+    // }
+
+    // console.log(zeroFuel(50,25,2))
+
+
+let alpha=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","s","t","u","w","x","y","z"]
+// let beta = "better".split("")
+
+    function  isPangram(string){
+      let lower = string.toLowerCase()
+      console.log(lower)
+      let broken = lower.split("")
+      console.log(broken)
+      let pan = alpha.every(x => lower.includes(x))
+      console.log(pan)
     }
 
-    takeYearGiveCent(1900)
+    // function isBeta(string){
+    //   let test = string.toLowerCase()
+    //   let betatest=beta.every(x => test.includes(x))
+    //   console.log (betatest)
+    // }
+
+    isPangram("the quick brown fox jumps over the lazy dog")
+  //   isBeta("bette life")
+
+  // let alpha = "abcdefghijklmnopqrstuvwxyz".split
+
+  // function isPangram(string){
+  //   let lower = string.toLowerCase()
+  //   let pan = alpha.every(x => lower.includes(x))
+  //   return pan
+  // }
