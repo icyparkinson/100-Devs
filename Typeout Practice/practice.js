@@ -967,35 +967,102 @@ let numbers = [2, 5, 9, 10]
 //     console.log(myInput)
 //   }
 
-let testString = "ATTGC"
+// let testString = "ATTGC"
 
-function convertArray(string){
-  let stringToArray = string.split("")
-  return(stringToArray)
+// function convertArray(string){
+//   let stringToArray = string.split("")
+//   return(stringToArray)
+// }
+
+// convertArray(testString)
+
+// function DNAstrand(dna){
+//   let output = []
+//   for (let i = 0; i < dna.length; i++){
+//     if (dna[i] === "A"){
+//       output.push("T")
+//     }
+//     else if (dna[i] === "T"){
+//       output.push("A")
+//     }
+//     else if (dna[i] === "C"){
+//       output.push("G")
+//     }
+//     else if (dna[i] === "G"){
+//       output.push("C")
+//     }
+//     else{
+//       console.log(output)
+//     }
+//   } let finalOut = output.join("")
+//   return(finalOut)
+// } 
+
+// DNAstrand(convertArray(testString))
+
+
+// function findSum(num){
+//   let x = 0;
+//   for (let i = 0; i <=num; i++){
+//     x += i
+//   } console.log(x)
+//   return x
+// }
+// findSum(10)
+
+// let eleSum = elements.reduce((acc,c) => acc + c, 0)
+
+// console.log(eleSum)
+
+// console.log(findSum(10) - eleSum)
+
+let elements = [1,2,3,4,5,7,8,9,10]
+let lightning = [0,1,2,1,0]
+let rainbow = [1,2,3,4,3,2,1]
+let weather = [2,3,2]
+let cloud = []
+
+
+// function findEvenIndex(arr){
+//   let left = 0
+//   let right = 0
+//   if (arr.length === 0){
+//     console.log(-1)
+//   }
+
+//   for (let i = 0; i < arr.length; i++){
+//     right = arr.slice(i+1).reduce((acc,c) => acc+c,0)
+//     left = arr.slice(0,i).reduce((acc,c) => acc+c,0)
+//     if (right === left){
+//       console.log(`when i is ${i}, the element is ${arr[i]} left is ${left} and right is ${right}`)
+//       console.log(`${i} is the answer`)
+//       return i
+//     }
+//     else{
+//     console.log(`when i is ${i}, the element is ${arr[i]} left is ${left} and right is ${right}`)
+//       console.log("not this index")
+//     }
+// }}
+
+// findEvenIndex(elements)
+
+
+
+function findIndex(arr){
+  let left = 0
+  let right = 0
+  if (arr.length === 0){
+    return (-1)
+  }
+
+  for (let i = 0; i < arr.length; i++){
+    right = arr.slice(i+1).reduce((acc,c) => acc+c,0)
+    left = arr.slice(0,i).reduce((acc,c) => acc+c,0)
+    if (right === left){
+      return i
+    }
+} return -1
 }
 
-convertArray(testString)
+console.log(findIndex(rainbow))
 
-function DNAstrand(dna){
-  let output = []
-  for (let i = 0; i < dna.length; i++){
-    if (dna[i] === "A"){
-      output.push("T")
-    }
-    else if (dna[i] === "T"){
-      output.push("A")
-    }
-    else if (dna[i] === "C"){
-      output.push("G")
-    }
-    else if (dna[i] === "G"){
-      output.push("C")
-    }
-    else{
-      console.log(output)
-    }
-  } let finalOut = output.join("")
-  console.log(finalOut)
-} 
-
-DNAstrand(convertArray(testString))
