@@ -468,7 +468,7 @@
 // }
 // takeNumbers()
 
-let listOfNums = [1,2,3,4,5]
+// let listOfNums = [1,2,3,4,5]
 // product = 1
 // function getProduct(arr){
 //   for (let i = 0; i < arr.length; i++){
@@ -653,7 +653,7 @@ let listOfNums = [1,2,3,4,5]
 
 //   console.log(digitize(89))
 
-let nums = [1,2,3,4,5]
+// let nums = [1,2,3,4,5]
 
 // function reduction(arr){
 
@@ -1085,7 +1085,7 @@ let numbers = [2, 5, 9, 10]
 //   return (filtered)
 // }
 
-let arr = [5, 3, 8, 1]
+// let arr = [5, 3, 8, 1]
 // filterRange(arr, 1, 4)
 
 // function filterRangeInPlace(arr, a, b){
@@ -1140,42 +1140,152 @@ let arr = [5, 3, 8, 1]
 //   console.log("You didn't put in a day of the week.")
 // }
 
-let hours = Number(prompt("What is the hour?"))
-let minutes = Number(prompt("What are the minutes?"))
-let seconds = Number(prompt("What are the seconds?"))
+// let hours = Number(prompt("What is the hour?"))
+// let minutes = Number(prompt("What are the minutes?"))
+// let seconds = Number(prompt("What are the seconds?"))
 
-if ((hours > 23) || (hours <= 0)){
-  console.log("Hours don't make sense")
-}
+// if ((hours > 23) || (hours <= 0)){
+//   console.log("Hours don't make sense")
+// }
 
-if ((minutes > 60) || (minutes <= 0)){
-  console.log("Minutes don't make sense")
-}
+// if ((minutes > 60) || (minutes <= 0)){
+//   console.log("Minutes don't make sense")
+// }
 
-if ((seconds > 60) || (seconds <= 0)){
-  console.log("Seconds don't make sense")
-}
+// if ((seconds > 60) || (seconds <= 0)){
+//   console.log("Seconds don't make sense")
+// }
 
-if ((minutes == 59) && (seconds == 59)){
-  if (hours == 23){
-    hours = 0
-  } else{
-    hours += 1
-  }
-  minutes = 0
-  seconds = 0
-  console.log(`${hours}h${minutes}m${seconds}s`)
+// if ((minutes == 59) && (seconds == 59)){
+//   if (hours == 23){
+//     hours = 0
+//   } else{
+//     hours += 1
+//   }
+//   minutes = 0
+//   seconds = 0
+//   console.log(`${hours}h${minutes}m${seconds}s`)
 
-} else if (seconds == 59){
-  if (minutes == 59){
-    minutes = 0
-  } else{
-    minutes += 1
-  }
-  seconds = 0
-  console.log(`${hours}h${minutes}m${seconds}s`)
-}
+// } else if (seconds == 59){
+//   if (minutes == 59){
+//     minutes = 0
+//   } else{
+//     minutes += 1
+//   }
+//   seconds = 0
+//   console.log(`${hours}h${minutes}m${seconds}s`)
+// }
 
-else{
-    console.log(`${hours}h${minutes}m${seconds+1}s`)
-    }
+// else{
+//     console.log(`${hours}h${minutes}m${seconds+1}s`)
+//     }
+
+// let count = prompt("Give a number: ")
+
+// for (let i = 1; i <= count; i++){
+//   console.log(i)
+// }
+
+// let i = 1
+// while (i <= count){
+//   console.log(i)
+//   i++
+// }
+
+
+
+// for (let i = 1; i <= count; i++) {
+//   if (i % 2 === 0) {
+//     console.log(`${i} is even`);
+//   }
+//   else {
+//     console.log(`${i} is odd`)
+//   }
+// }
+
+// let askNum = Number(prompt("Guess a number: "))
+// while (askNum > 9){
+//   askNum = prompt("Go lower: ")
+// }
+// while (askNum < 2){
+//   askNum = prompt("Go higher")
+// }
+// console.log(`${askNum} x 1 = ${Number(askNum) * 1}`)
+// console.log(`${askNum} x 2 = ${Number(askNum) * 2}`)
+// console.log(`${askNum} x 3 = ${Number(askNum) * 3}`)
+// console.log(`${askNum} x 4 = ${Number(askNum) * 4}`)
+// console.log(`${askNum} x 5 = ${Number(askNum) * 5}`)
+// console.log(`${askNum} x 6 = ${Number(askNum) * 6}`)
+// console.log(`${askNum} x 7 = ${Number(askNum) * 7}`)
+// console.log(`${askNum} x 8 = ${Number(askNum) * 8}`)
+// console.log(`${askNum} x 9 = ${Number(askNum) * 9}`)
+// console.log(`${askNum} x 10 = ${Number(askNum) * 10}`)
+
+// let answer = prompt("Give me a word: ")
+// while ((answer.toLowerCase() != "yes") && (answer.toLowerCase() != "no")){
+//   answer = prompt("Give me another word: ")
+// }
+// console.log("success!")
+
+
+// let firstName = prompt("Enter first name: ")
+// let lastName = prompt("Enter last name: ")
+// function sayHello(firstName, lastName) {
+//   const message = `Hello, ${firstName} ${lastName}!`;
+//   return message;
+// }
+// console.log(sayHello(firstName, lastName))
+
+// // Square the given number x
+// function square1(x) {
+//   return (x*x)
+// }
+
+// // Square the given number x
+// const square2 = x => {return x*x}
+
+// console.log(square1(0)); // Must show 0
+// console.log(square1(2)); // Must show 4
+// console.log(square1(5)); // Must show 25
+
+// console.log(square2(0)); // Must show 0
+// console.log(square2(2)); // Must show 4
+// console.log(square2(5)); // Must show 25
+
+// for (let i = 1; i <= 10; i++){
+//   console.log(square1(i))
+// }
+
+// function showMin(a,b){
+//   if (a < b){
+//     console.log(a)
+//   }
+//   else if (a > b){
+//     console.log(b)
+//   }
+//   else{
+//     console.log("same number")
+//   }
+// }
+
+
+// function calculate(a, op, b){
+//   if (op === "+"){
+//     return(a + b)
+//   }
+//   else if (op === "-"){
+//     return(a - b)
+//   }
+//   else if (op === "*"){
+//     return(a * b)
+//   }
+//   else if (op === "/"){
+//     return(a / b)
+//   }
+// }
+
+// console.log(calculate(4, "+", 6));  // Must show 10
+// console.log(calculate(4, "-", 6));  // Must show -2
+// console.log(calculate(2, "*", 0));  // Must show 0
+// console.log(calculate(12, "/", 0)); // Must show Infinity
+
