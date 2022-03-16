@@ -1016,53 +1016,166 @@ let numbers = [2, 5, 9, 10]
 
 // console.log(findSum(10) - eleSum)
 
-let elements = [1,2,3,4,5,7,8,9,10]
-let lightning = [0,1,2,1,0]
-let rainbow = [1,2,3,4,3,2,1]
-let weather = [2,3,2]
-let cloud = []
+// let elements = [1,2,3,4,5,7,8,9,10]
+// let lightning = [0,1,2,1,0]
+// let rainbow = [1,2,3,4,3,2,1]
+// let weather = [2,3,2]
+// let cloud = []
 
 
-// function findEvenIndex(arr){
+// // function findEvenIndex(arr){
+// //   let left = 0
+// //   let right = 0
+// //   if (arr.length === 0){
+// //     console.log(-1)
+// //   }
+
+// //   for (let i = 0; i < arr.length; i++){
+// //     right = arr.slice(i+1).reduce((acc,c) => acc+c,0)
+// //     left = arr.slice(0,i).reduce((acc,c) => acc+c,0)
+// //     if (right === left){
+// //       console.log(`when i is ${i}, the element is ${arr[i]} left is ${left} and right is ${right}`)
+// //       console.log(`${i} is the answer`)
+// //       return i
+// //     }
+// //     else{
+// //     console.log(`when i is ${i}, the element is ${arr[i]} left is ${left} and right is ${right}`)
+// //       console.log("not this index")
+// //     }
+// // }}
+
+// // findEvenIndex(elements)
+
+
+
+// function findIndex(arr){
 //   let left = 0
 //   let right = 0
 //   if (arr.length === 0){
-//     console.log(-1)
+//     return (-1)
 //   }
 
 //   for (let i = 0; i < arr.length; i++){
 //     right = arr.slice(i+1).reduce((acc,c) => acc+c,0)
 //     left = arr.slice(0,i).reduce((acc,c) => acc+c,0)
 //     if (right === left){
-//       console.log(`when i is ${i}, the element is ${arr[i]} left is ${left} and right is ${right}`)
-//       console.log(`${i} is the answer`)
 //       return i
 //     }
-//     else{
-//     console.log(`when i is ${i}, the element is ${arr[i]} left is ${left} and right is ${right}`)
-//       console.log("not this index")
-//     }
-// }}
+// } return -1
+// }
 
-// findEvenIndex(elements)
+// console.log(findIndex(rainbow))
 
+// document.querySelector("h1").classList.
 
 
-function findIndex(arr){
-  let left = 0
-  let right = 0
-  if (arr.length === 0){
-    return (-1)
-  }
+// function camelize(str){
+// let splitStr = str.split("-")
+// let mapSplit = splitStr.map((word, index) => index === 0 ? word : word[0].toUpperCase() + word.slice(1))
+// let finalWord = mapSplit.join("")
+// console.log(finalWord)
+// return(finalWord)
+// }
 
-  for (let i = 0; i < arr.length; i++){
-    right = arr.slice(i+1).reduce((acc,c) => acc+c,0)
-    left = arr.slice(0,i).reduce((acc,c) => acc+c,0)
-    if (right === left){
-      return i
-    }
-} return -1
+// camelize("background-color")
+
+// function filterRange(arr, a,b){
+//   let filtered = arr.filter(x => (a <= x && x <= b))
+//   console.log(filtered)
+//   return (filtered)
+// }
+
+let arr = [5, 3, 8, 1]
+// filterRange(arr, 1, 4)
+
+// function filterRangeInPlace(arr, a, b){
+//   for (let i = 0; i < arr.length; i++){
+//     if ((arr[i] < a) || (arr[i] > b)) {
+//       arr.splice (i,1)
+//     } 
+//   } console.log(arr)
+// }
+
+// filterRangeInPlace(arr,1,4)
+
+
+// arr.sort( (a,b) => b-a)
+// console.log(arr)
+
+// function copySorted(arr){
+//   console.log(  ( arr.slice() ) .sort() )
+// }
+
+// copySorted(arr)
+
+
+// let firstName = prompt("What is your first name?")
+// let lastName = prompt("What is your last name?")
+// console.log(`Your name is ${firstName} ${lastName}.`)
+
+// let day = prompt("Pick a day of the week")
+// let lowerDay = day.toLowerCase()
+// if (lowerDay === "monday") {
+//   console.log(`After ${lowerDay} is Tuesday`)
+// }
+// else if (lowerDay === "tuesday") {
+//   console.log(`After ${lowerDay} is Wednesday`)
+// }
+// else if (lowerDay === "wednesday") {
+//   console.log(`After ${lowerDay} is Thursday`)
+// }
+// else if (lowerDay === "thursday") {
+//   console.log(`After ${lowerDay} is Friday`)
+// }
+// else if (lowerDay === "friday") {
+//   console.log(`After ${lowerDay} is Saturday`)
+// }
+// else if (lowerDay === "saturday") {
+//   console.log(`After ${lowerDay} is Sunday`)
+// }
+// else if (lowerDay === "sunday") {
+//   console.log(`After ${lowerDay} is Monday`)
+// }
+// else{
+//   console.log("You didn't put in a day of the week.")
+// }
+
+let hours = Number(prompt("What is the hour?"))
+let minutes = Number(prompt("What are the minutes?"))
+let seconds = Number(prompt("What are the seconds?"))
+
+if ((hours > 23) || (hours <= 0)){
+  console.log("Hours don't make sense")
 }
 
-console.log(findIndex(rainbow))
+if ((minutes > 60) || (minutes <= 0)){
+  console.log("Minutes don't make sense")
+}
 
+if ((seconds > 60) || (seconds <= 0)){
+  console.log("Seconds don't make sense")
+}
+
+if ((minutes == 59) && (seconds == 59)){
+  if (hours == 23){
+    hours = 0
+  } else{
+    hours += 1
+  }
+  minutes = 0
+  seconds = 0
+  console.log(`${hours}h${minutes}m${seconds}s`)
+
+} else if (seconds == 59){
+  if (minutes == 59){
+    minutes = 0
+  } else{
+    minutes += 1
+  }
+  seconds = 0
+  console.log(`${hours}h${minutes}m${seconds}s`)
+}
+
+else{
+    console.log(`${hours}h${minutes}m${seconds+1}s`)
+    }
