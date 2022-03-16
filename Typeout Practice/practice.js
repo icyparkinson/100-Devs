@@ -720,7 +720,7 @@
 
 // pow(2,4)
 
-let numbers = [2, 5, 9, 10]
+// let numbers = [2, 5, 9, 10]
 
 // numbers.forEach(value=>{
 //     console.log(value)
@@ -1288,4 +1288,18 @@ let numbers = [2, 5, 9, 10]
 // console.log(calculate(4, "-", 6));  // Must show -2
 // console.log(calculate(2, "*", 0));  // Must show 0
 // console.log(calculate(12, "/", 0)); // Must show Infinity
+
+// function isAnagram(test, original){
+//   let origSplit = original.toLowerCase().split("").sort().join("")
+//   let testSplit = test.toLowerCase().split("").sort().join("")
+//     if (origSplit === testSplit){
+//       return true
+//     }
+//     else{
+//       return false
+//     }
+//   }
+// }
+
+// isAnagram("DeathCubeK", "Buckethead")
 
