@@ -1303,3 +1303,14 @@
 
 // isAnagram("DeathCubeK", "Buckethead")
 
+// document.querySelector("#animeButton").addEventListener("click", magic)
+
+
+// function magic(){
+//   let linkstuff = document.querySelector("input").value
+//   console.log("Magic happens")
+//   console.log(linkstuff)
+//   let animeID = linkstuff.split("/")[4]
+//   console.log(animeID)
+// }
+

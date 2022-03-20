@@ -31,6 +31,12 @@ li{
   height: 65px;
 }
 
+#animeButton{
+  position: absolute;
+  text-align: left;
+  color: blue;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
