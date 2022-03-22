@@ -1342,9 +1342,17 @@
 
 // sumDigits(-23)
 
-function even_or_odd(number) {
-  let answer = (number%2 === 0) ? "Even" : "Odd"
-  return answer
+// function even_or_odd(number) {
+//   let answer = (number%2 === 0) ? "Even" : "Odd"
+//   return answer
+// }
+
+// console.log(even_or_odd(4))
+
+let passArr = [1, 2, 10, 50, 5]
+
+function solution(nums){
+  return passArr.sort(function(a,b){return a-b})
 }
 
-console.log(even_or_odd(4))
+console.log(solution(passArr))
