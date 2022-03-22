@@ -1314,3 +1314,37 @@
 //   console.log(animeID)
 // }
 
+// function sumDigits(num){
+//   let numberArr = num.toString().split("")
+//   for (let i = 0; i < numberArr.length; i++){
+//       numberArr[i] = (parseInt(numberArr[i]))
+//       console.log(numberArr)
+//     }
+//   let sum = numberArr.reduce((acc, c) => acc + c, 0)
+//   console.log(sum)
+//   return (sum)
+// }
+
+
+
+// function sumDigits(num){
+//   let toInt = Math.abs(Number(num))
+//   console.log(toInt)
+//   let numberArr = toInt.toString().split("")
+//     // for (let i = 0; i < numberArr.length; i++){
+//     //     numberArr[i] = (parseInt(numberArr[i]))
+//     //     console.log(numberArr)
+//       // }
+//     let sum = numberArr.reduce((acc, c) => +acc + +c, 0)
+//     console.log(sum)
+//     return (sum)
+// }
+
+// sumDigits(-23)
+
+function even_or_odd(number) {
+  let answer = (number%2 === 0) ? "Even" : "Odd"
+  return answer
+}
+
+console.log(even_or_odd(4))
