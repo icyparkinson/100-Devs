@@ -1349,10 +1349,72 @@
 
 // console.log(even_or_odd(4))
 
-let passArr = [1, 2, 10, 50, 5]
+// let passArr = [1, 2, 10, 50, 5]
 
-function solution(nums){
-  return passArr.sort(function(a,b){return a-b})
-}
+// function solution(nums){
+//   return passArr.sort(function(a,b){return a-b})
+// }
 
-console.log(solution(passArr))
+// console.log(solution(passArr))
+
+
+// function Calculator() {
+//   this.methods = {
+//     "-" : (a,b) => a - b,
+//     "+" : (a,b) => a + b,
+//   }
+// }
+
+
+// console.log( calc.calculate("3 + 7") ); // 10
+
+// let powerCalc = new Calculator;
+// powerCalc.addMethod("*", (a, b) => a * b);
+// powerCalc.addMethod("/", (a, b) => a / b);
+// powerCalc.addMethod("**", (a, b) => a ** b);
+
+// let result = powerCalc.calculate("2 ** 3");
+// console.log( result ); // 8
+
+
+// let mouse = {
+// color : "black",
+// brand : "microsoft",
+// shape : "round",
+// size : "small",
+
+// leftClick(){
+//   console.log("Left clicked")
+// },
+
+// rightClick(){
+//   console.log("Right clicked.")
+// },
+
+// scrollWheel(){
+//   console.log("scrolly")
+// }
+// }
+
+// console.log(mouse)
+
+
+
+// function Streetfighter(name, hairColor, outfit, shoes){
+//   this.name = "Loli"
+//   this.hairColor = "pink"
+//   this.outfit = "dress"
+//   this.shoes = "sneakers"
+//   this.skill = function(){
+//     console.log("Haiyaa!")
+//   }
+//   this.battleCry = function(){
+//     console.log("I'm gonna win!")
+//   }
+// }
+
+
+let n = 123456
+let x = Array.from(String(n), Number, String(n))
+
+console.log(x)
