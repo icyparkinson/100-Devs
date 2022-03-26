@@ -1414,7 +1414,40 @@
 // }
 
 
-let n = 123456
-let x = Array.from(String(n), Number, String(n))
+// let n = 123456
+// let x = Array.from(String(n), Number)
 
-console.log(x)
+// console.log(x)
+
+// function removeChar(str){
+// let str = ("chai").split("")
+// console.log(str)
+// str.splice(0,1)
+// console.log(str)
+// str.splice(str.length-1, 1)
+// console.log(str)
+
+// function removeChar(str){
+//   let result = str.split("")
+//   result.splice(0,1)
+//   console.log(result)
+//   result.splice(result.length-1, 1)
+//   console.log(result)
+//   return (result)
+// }
+
+// removeChar("bobby")
+
+function changeName(name){
+let array = name.split(" ")
+let first = array[0].split("")[0].toUpperCase()
+let last = array[1].split("")[0].toUpperCase()
+
+console.log(array)
+console.log(first)
+console.log(last)
+
+}
+
+changeName("robert pierce")
+//desired output: R.P
