@@ -1438,16 +1438,22 @@
 
 // removeChar("bobby")
 
-function changeName(name){
-let array = name.split(" ")
-let first = array[0].split("")[0].toUpperCase()
-let last = array[1].split("")[0].toUpperCase()
+// function changeName(name){
+// let array = name.split(" ")
+// let first = array[0].split("")[0].toUpperCase()
+// let last = array[1].split("")[0].toUpperCase()
 
-console.log(array)
-console.log(first)
-console.log(last)
+// console.log(array)
+// console.log(first)
+// console.log(last)
 
+// }
+
+// changeName("robert pierce")
+// //desired output: R.P
+
+function defineSuit(card){
+  if (card.includes(♣)){
+    return "clubs"
+  }
 }
-
-changeName("robert pierce")
-//desired output: R.P
