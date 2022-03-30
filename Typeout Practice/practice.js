@@ -1452,8 +1452,92 @@
 // changeName("robert pierce")
 // //desired output: R.P
 
-function defineSuit(card){
-  if (card.includes(♣)){
-    return "clubs"
-  }
+// function defineSuit(card){
+//   if (card.includes(♣)){
+//     return "clubs"
+//   }
+// }
+
+// let sentence = "Is this a question?"
+// if (sentence.includes("?")){
+//   console.log("true")
+// } else{
+//   console.log("false")
+// }
+
+// let multWords = "I will be a jr. dev by the end of the year"
+// multWords = multWords.replace("jr. dev", "software engineer")
+// console.log(multWords)
+
+// function rps(){
+//   let result = Math.random()
+//   if (result < 0.3333){
+//     return ("rock")
+//   } else if (result < 0.6666){
+//     return ("paper")
+//   } else {
+//     return ("scissors")
+//   }
+// }
+// rps()
+
+// function play(move){
+//   let computer = rps()
+//   if ( ( move === "rock" && computer === "paper") ||
+//   ( move === "scissors" && computer === "rock") ||
+//   ( move === "paper" && computer === "scissors") )
+//   {console.log (`Computer threw a ${computer}. You lose.`)
+
+//   } else if ( move === "rock" && computer === "scissors"){
+//     console.log (`Computer threw a ${computer}. You win!`)
+//   } else if (( move === "scissors") && (rps() === "rock")){
+//     console.log (`Computer threw a ${computer}. You lose.`)
+//   } else if (( move === "scissors") && (rps() === "paper")){
+//     console.log (`Computer threw a ${computer}. You win!`)
+//   } else if (( move === "paper") && (rps() === "scissors")){
+//     console.log (`Computer threw a ${computer}. You lose.`)
+//   } else if (( move === "paper") && (rps() === "rock")){
+//     console.log (`Computer threw a ${computer}. You win!`)
+//   } else{
+//     console.log("You tied.")
+//   }
+// } 
+
+// play("scissors")
+
+// let arNum = [2,4,6]
+// let sumNum = arNum.reduce((acc, c) => acc + c, 0)
+// console.log(sumNum)
+// let squareNum = arNum.map(x => x**2)
+// console.log(squareNum)
+
+// function takesString(str){
+//   return(str.split("").reverse().join(""))
+// }
+
+// function isPall(str){
+//   if (str === takesString(str)){
+//     console.log("true")
+//   } else{
+//     console.log("false")
+//   }
+// }
+
+// isPall("leonoel")
+
+function makeTony(charName, hairColor, shoeColor, numOfHands){
+this.name = charName
+this.hair = hairColor
+this.shoe = shoeColor
+this.numOfHands = 2
+this.shout = function(){
+  console.log("Hiya!")
 }
+this.skill = function(){
+  console.log("My skill!")
+}
+}
+
+let icyTony = new makeTony("Icy", "Blonde", "Red", "2")
+
+console.log(icyTony)
