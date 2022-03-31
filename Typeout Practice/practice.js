@@ -1525,7 +1525,7 @@
 
 // isPall("leonoel")
 
-function makeTony(charName, hairColor, shoeColor, numOfHands){
+function MakeTony(charName, hairColor, shoeColor, numOfHands){
 this.name = charName
 this.hair = hairColor
 this.shoe = shoeColor
