@@ -1525,19 +1525,19 @@
 
 // isPall("leonoel")
 
-function MakeTony(charName, hairColor, shoeColor, numOfHands){
-this.name = charName
-this.hair = hairColor
-this.shoe = shoeColor
-this.numOfHands = 2
-this.shout = function(){
-  console.log("Hiya!")
-}
-this.skill = function(){
-  console.log("My skill!")
-}
-}
+// function MakeTony(charName, hairColor, shoeColor, numOfHands){
+// this.name = charName
+// this.hair = hairColor
+// this.shoe = shoeColor
+// this.numOfHands = 2
+// this.shout = function(){
+//   console.log("Hiya!")
+// }
+// this.skill = function(){
+//   console.log("My skill!")
+// }
+// }
 
-let icyTony = new makeTony("Icy", "Blonde", "Red", "2")
+// let icyTony = new makeTony("Icy", "Blonde", "Red", "2")
 
-console.log(icyTony)
+// console.log(icyTony)
