@@ -1481,27 +1481,27 @@
 // }
 // rps()
 
-// function play(move){
-//   let computer = rps()
-//   if ( ( move === "rock" && computer === "paper") ||
-//   ( move === "scissors" && computer === "rock") ||
-//   ( move === "paper" && computer === "scissors") )
-//   {console.log (`Computer threw a ${computer}. You lose.`)
+function play(move){
+  let computer = rps()
+  if ( ( move === "rock" && computer === "paper") ||
+  ( move === "scissors" && computer === "rock") ||
+  ( move === "paper" && computer === "scissors") )
+  {console.log (`Computer threw a ${computer}. You lose.`)
 
-//   } else if ( move === "rock" && computer === "scissors"){
-//     console.log (`Computer threw a ${computer}. You win!`)
-//   } else if (( move === "scissors") && (rps() === "rock")){
-//     console.log (`Computer threw a ${computer}. You lose.`)
-//   } else if (( move === "scissors") && (rps() === "paper")){
-//     console.log (`Computer threw a ${computer}. You win!`)
-//   } else if (( move === "paper") && (rps() === "scissors")){
-//     console.log (`Computer threw a ${computer}. You lose.`)
-//   } else if (( move === "paper") && (rps() === "rock")){
-//     console.log (`Computer threw a ${computer}. You win!`)
-//   } else{
-//     console.log("You tied.")
-//   }
-// } 
+  } else if ( move === "rock" && computer === "scissors"){
+    console.log (`Computer threw a ${computer}. You win!`)
+  } else if (( move === "scissors") && (rps() === "rock")){
+    console.log (`Computer threw a ${computer}. You lose.`)
+  } else if (( move === "scissors") && (rps() === "paper")){
+    console.log (`Computer threw a ${computer}. You win!`)
+  } else if (( move === "paper") && (rps() === "scissors")){
+    console.log (`Computer threw a ${computer}. You lose.`)
+  } else if (( move === "paper") && (rps() === "rock")){
+    console.log (`Computer threw a ${computer}. You win!`)
+  } else{
+    console.log("You tied.")
+  }
+} 
 
 // play("scissors")
 
