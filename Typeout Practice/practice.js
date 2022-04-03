@@ -1481,27 +1481,27 @@
 // }
 // rps()
 
-function play(move){
-  let computer = rps()
-  if ( ( move === "rock" && computer === "paper") ||
-  ( move === "scissors" && computer === "rock") ||
-  ( move === "paper" && computer === "scissors") )
-  {console.log (`Computer threw a ${computer}. You lose.`)
+// function play(move){
+//   let computer = rps()
+//   if ( ( move === "rock" && computer === "paper") ||
+//   ( move === "scissors" && computer === "rock") ||
+//   ( move === "paper" && computer === "scissors") )
+//   {console.log (`Computer threw a ${computer}. You lose.`)
 
-  } else if ( move === "rock" && computer === "scissors"){
-    console.log (`Computer threw a ${computer}. You win!`)
-  } else if (( move === "scissors") && (rps() === "rock")){
-    console.log (`Computer threw a ${computer}. You lose.`)
-  } else if (( move === "scissors") && (rps() === "paper")){
-    console.log (`Computer threw a ${computer}. You win!`)
-  } else if (( move === "paper") && (rps() === "scissors")){
-    console.log (`Computer threw a ${computer}. You lose.`)
-  } else if (( move === "paper") && (rps() === "rock")){
-    console.log (`Computer threw a ${computer}. You win!`)
-  } else{
-    console.log("You tied.")
-  }
-} 
+//   } else if ( move === "rock" && computer === "scissors"){
+//     console.log (`Computer threw a ${computer}. You win!`)
+//   } else if (( move === "scissors") && (rps() === "rock")){
+//     console.log (`Computer threw a ${computer}. You lose.`)
+//   } else if (( move === "scissors") && (rps() === "paper")){
+//     console.log (`Computer threw a ${computer}. You win!`)
+//   } else if (( move === "paper") && (rps() === "scissors")){
+//     console.log (`Computer threw a ${computer}. You lose.`)
+//   } else if (( move === "paper") && (rps() === "rock")){
+//     console.log (`Computer threw a ${computer}. You win!`)
+//   } else{
+//     console.log("You tied.")
+//   }
+// } 
 
 // play("scissors")
 
@@ -1541,3 +1541,121 @@ function play(move){
 // let icyTony = new makeTony("Icy", "Blonde", "Red", "2")
 
 // console.log(icyTony)
+
+// /**
+//  * Definition for isBadVersion()
+//  * 
+//  * @param {integer} version number
+//  * @return {boolean} whether the version is bad
+//  * isBadVersion = function(version) {
+//  *     ...
+//  * };
+//  */
+
+// /**
+//  * @param {function} isBadVersion()
+//  * @return {function}
+//  */
+//  var solution = function(isBadVersion) {
+//   /**
+//    * @param {integer} n Total versions
+//    * @return {integer} The first bad version
+//    */
+//   return function(n) {
+//       let left = 1
+//       let right = n
+//       while (left < right){
+//         let mid = Math.floor (  (left + right) / 2  )
+//         if (isBadVersion(mid)){
+//           right = mid
+//         } else{
+//           left = mid + 1
+//         }
+//         }
+//       }
+//   };
+// ;
+
+
+// var search = function(nums, target) {
+    
+//   let left = 0,
+//       right = nums.length-1,
+//       mid
+  
+//   while (left < right){
+//       mid = Math.floor( (left + right) / 2)
+//       if (nums[mid] == target)
+//           return mid
+//       if (nums[mid] > target)
+//           right = mid
+//       else
+//           left = mid
+      
+//   } return -1
+// };
+
+// console.log(search(nums, target))
+
+// var search = function(nums, target) {
+//   var lo = 0,
+//       hi = nums.length - 1,
+//       mid;
+
+//   while (lo <= hi) {
+//       mid = Math.floor((lo + hi) / 2);
+//       if (nums[mid] == target)
+//           return mid;
+//       if (nums[mid] < target)
+//           lo = mid + 1;
+//       else
+//           hi = mid - 1;
+//   }
+
+//   return -1;
+// };
+
+// let nums = [-1, 0, 3, 5, 9, 12]
+// let target = 14
+
+//  var searchInsert = function(nums, target) {
+//   let left = 0,
+//       right = nums.length,
+//       mid;
+//   while (left < right){
+//       mid = left + Math.floor((right - left) / 2)
+//       if (nums[mid] === target){
+//         console.log(`${mid} is mid. ${left} is left and ${right} is right.`)
+//           return mid
+//       }else if (nums[mid] > target){
+//         console.log(`${mid} is mid. ${left} is left and ${right} is right.`)
+//           right = mid
+//       } else{
+//         console.log(`${mid} is mid. ${left} is left and ${right} is right.`)
+//           left = mid+1
+//       }
+//   } return left
+// };
+
+// console.log(searchInsert(nums,target))
+
+
+
+// 2, 3, 4, 5
+// lo + ((hi - lo) / 2)
+
+// 2 + 5 = 7 / 2 = 3
+// 2 = 3
+
+let list = [1, 2, 3, 4, 5]
+// list.unshift(list.pop())
+// console.log(list)
+
+function rotate (arr, k){
+  for (let i = 0; i < k; i++){
+    arr.unshift(arr.pop())
+  }
+}
+
+rotate(list, 5)
+console.log(list)
