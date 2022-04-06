@@ -1647,15 +1647,39 @@
 // 2 + 5 = 7 / 2 = 3
 // 2 = 3
 
-let list = [1, 2, 3, 4, 5]
-// list.unshift(list.pop())
+// let list = [1, 2, 3, 4, 5]
+// // list.unshift(list.pop())
+// // console.log(list)
+
+// function rotate (arr, k){
+//   for (let i = 0; i < k; i++){
+//     arr.unshift(arr.pop())
+//   }
+// }
+
+// rotate(list, 5)
 // console.log(list)
 
-function rotate (arr, k){
-  for (let i = 0; i < k; i++){
-    arr.unshift(arr.pop())
-  }
-}
+// function accum(s){
+//   s.split("")
+//   let sLen = s.split("").length
 
-rotate(list, 5)
-console.log(list)
+// }
+
+const rotate = (nums, k) =>{
+  k%= nums.length
+
+  const reverse = (start,end) => {
+    while (start < end){
+      let temp = nums[start]
+      nums[start] = nums[end]
+      nums[end] = temp
+      start++
+      end--
+    }
+  }
+
+  reverse(0, nums.length-1)
+  reverse(0, k-1)
+  reverse(k, nums.length-1)
+}
