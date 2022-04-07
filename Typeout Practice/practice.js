@@ -1666,20 +1666,84 @@
 
 // }
 
-const rotate = (nums, k) =>{
-  k%= nums.length
+// const rotate = (nums, k) =>{
+//   k%= nums.length
 
-  const reverse = (start,end) => {
-    while (start < end){
-      let temp = nums[start]
-      nums[start] = nums[end]
-      nums[end] = temp
-      start++
-      end--
-    }
-  }
+//   const reverse = (start,end) => {
+//     while (start < end){
+//       let temp = nums[start]
+//       nums[start] = nums[end]
+//       nums[end] = temp
+//       start++
+//       end--
+//     }
+//   }
 
-  reverse(0, nums.length-1)
-  reverse(0, k-1)
-  reverse(k, nums.length-1)
-}
+//   reverse(0, nums.length-1)
+//   reverse(0, k-1)
+//   reverse(k, nums.length-1)
+// }
+
+// let logs = "stringhere"
+// let blue = [1,2,3,4,5]
+
+// function revMe(arr){
+//     let start = 0
+//     let end = arr.length-1
+//     while (start < end){
+//         let temp = arr[start]
+//         arr[start] = arr[end]
+//         arr[end] = temp
+//         start++
+//         end--
+//     }
+//     return arr
+// }
+// console.log(revMe(blue))
+
+ 
+// let reverseWords = function(s) {
+//   const reverse = (start,end) => {
+//       while (start < end){
+//       let temp = s[start]
+//       s[start] = s[end]
+//       s[end] = temp
+//       start++
+//       end--
+//       }
+//   }
+  
+  
+  //convert input to array = ["Let's", "take", "LeetCode", "contest"]
+//   let newS = s.split(" ")
+//   console.log(newS)
+  
+//   //convert each element to another array [  ["L", "e", "t", "'", "s"] ]
+  
+//   for (let i = 0; i < newS.length; i++){
+//       newS[i] = (revMe(newS[i].split(""))).join("")
+//   }
+  
+//   console.log(newS.join(" "))
+  
+// };
+
+// reverseWords("hello world")
+
+
+
+// function spinWords(string){
+//     //string = "Hey fellow warriors" // 
+//   // = ["hey", "fellow", "warriors"] <-- I want this
+//     // => ["hey", "wollef", "sroirraw"] <-- answer
+//     let newS = string.split(" ")
+//     for (let i = 0; i < newS.length; i++){
+//       if (newS[i].length >= 5){
+//         newS[i] = newS[i].split("").reverse().join("")
+//       }
+//     }
+//     return newS.join(" ")
+//   }
+
+// //   console.log(spinWords("red riding hood"))
+
