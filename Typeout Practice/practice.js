@@ -1747,3 +1747,29 @@
 
 // //   console.log(spinWords("red riding hood"))
 
+
+document.querySelector("#submitBtn").addEventListener("click", getDrink)
+function getDrink(){
+
+let ourDrink = document.querySelector("#drinkSearch").value
+
+fetch (`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${ourDrink}`)
+    .then(res => res.json())
+    .then (data => {
+        console.log(data.drinks[0])
+        document.querySelector("#imagey").src=data.drinks[0].strDrinkThumb
+        document.querySelector("#drinkName").innerText=data.drinks[0].strDrink
+        document.querySelector("#drinkHow").innerText=data.drinks[0].strInstructions
+
+
+    })
+    .catch(err => {
+        console.log(`error ${err}`)
+    })
+
+}
+
+// names with spaces in it
+// carousel of images
+
+// picture of the day from NASA

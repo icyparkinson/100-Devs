@@ -15,8 +15,8 @@ h1, h2{
 }
 img{
   display: block;
-  height: 300px;
   margin: 0 auto;
+  height: 300px;
 }
 ul{
   width: 100px;
@@ -35,6 +35,10 @@ li{
   position: absolute;
   text-align: left;
   color: blue;
+}
+
+#drink{
+  padding: 30px;
 }
 
 /******************************************
