@@ -1769,15 +1769,48 @@
 
 // picture of the day from NASA
 
-let colors = ["red", "yellow", "green"]
-let clothes = ["shirt", "pants", "socks"]
+// let colors = ["red", "yellow", "green"]
+// let clothes = ["shirt", "pants", "socks"]
 
-function combineStr(arr1, arr2){
-    for (let i = 0; i < arr1.length; i++){
-        for (let j = 0; j < arr2.length; j++){
-            console.log(arr1[i], arr2[j])
-        }
-    }
+// function combineStr(arr1, arr2){
+//     for (let i = 0; i < arr1.length; i++){
+//         for (let j = 0; j < arr2.length; j++){
+//             console.log(arr1[i], arr2[j])
+//         }
+//     }
+// }
+
+// combineStr(colors, clothes)
+
+
+let list = [-3, 2, 1, -5]
+
+let total = list.reduce (function(a,b){
+    return a+b
+}, 0)
+
+
+let sum = list.reduce(function(a,b){
+    return a+b
+},0)
+
+let final = list.reduce(function(a,b){
+    return a+b
+},0)
+
+let fin = list.reduce((a,b) => a+(b > 0 ? b : 0), 0)
+
+
+let filtered = list.map(function(x){
+    return x + 3
+})
+
+function squareDigits(num){
+    let val = num.toString().split("")    // convert to string so that I can turn into array with split
+    let newVal = val.map(function(x){      
+        return Number(x*x)                // made a new array, changing string to number and squaring it
+    })
+    return Number(newVal.join(""))      // used join to string it again, then change it back to number at the end
 }
 
-combineStr(colors, clothes)
+console.log(squareDigits(23))
