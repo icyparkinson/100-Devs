@@ -1783,34 +1783,45 @@
 // combineStr(colors, clothes)
 
 
-let list = [-3, 2, 1, -5]
+// let list = [-3, 2, 1, -5]
 
-let total = list.reduce (function(a,b){
-    return a+b
-}, 0)
-
-
-let sum = list.reduce(function(a,b){
-    return a+b
-},0)
-
-let final = list.reduce(function(a,b){
-    return a+b
-},0)
-
-let fin = list.reduce((a,b) => a+(b > 0 ? b : 0), 0)
+// let total = list.reduce (function(a,b){
+//     return a+b
+// }, 0)
 
 
-let filtered = list.map(function(x){
-    return x + 3
-})
+// let sum = list.reduce(function(a,b){
+//     return a+b
+// },0)
 
-function squareDigits(num){
-    let val = num.toString().split("")    // convert to string so that I can turn into array with split
-    let newVal = val.map(function(x){      
-        return Number(x*x)                // made a new array, changing string to number and squaring it
-    })
-    return Number(newVal.join(""))      // used join to string it again, then change it back to number at the end
+// let final = list.reduce(function(a,b){
+//     return a+b
+// },0)
+
+// let fin = list.reduce((a,b) => a+(b > 0 ? b : 0), 0)
+
+
+// let filtered = list.map(function(x){
+//     return x + 3
+// })
+
+// function squareDigits(num){
+//     let val = num.toString().split("")    // convert to string so that I can turn into array with split
+//     let newVal = val.map(function(x){      
+//         return Number(x*x)                // made a new array, changing string to number and squaring it
+//     })
+//     return Number(newVal.join(""))      // used join to string it again, then change it back to number at the end
+// }
+
+// console.log(squareDigits(23))
+
+function fib(n) {
+    if (n > 2){
+        return (fib(n-1) + fib(n-2))
+    } else{
+        return 1
+    }
 }
 
-console.log(squareDigits(23))
+
+console.log(fib(5))
