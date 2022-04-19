@@ -1815,13 +1815,46 @@
 
 // console.log(squareDigits(23))
 
-function fib(n) {
-    if (n > 2){
-        return (fib(n-1) + fib(n-2))
-    } else{
-        return 1
-    }
+// function fib(n) {
+//     if (n > 2){
+//         return (fib(n-1) + fib(n-2))
+//     } else{
+//         return 1
+//     }
+// }
+
+
+// console.log(fib(5))
+total = 0
+let blah = [4,3,2]
+blah.sort((a,b) => a-b)
+function barista(arr){
+    // console.log(arr)
+    for (let i = 0; i < arr.length; i++){
+        if ( i > 0){
+            total+= (arr[i] + barista(arr[i-1]))+2
+        }
+        else {
+            total+= arr[i]
+        }
+    } return total
 }
+console.log(barista(blah))
 
 
-console.log(fib(5))
+
+
+    // function barista(coffees){
+    //     coffees.sort((a,b) => a-b)
+    //     let wait = (coffees.length - 1) * 2
+    //     for (let i = 0; i < coffees.length; i++){
+    //         if (i > 0) {
+    //             return coffees[]
+    //         }
+    //         else {
+    //             return coffees[i]
+    //         }
+    //     }
+
+    //     return time
+    //   }
