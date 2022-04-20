@@ -1825,21 +1825,20 @@
 
 
 // console.log(fib(5))
-total = 0
-let blah = [4,3,2]
-blah.sort((a,b) => a-b)
-function barista(arr){
-    // console.log(arr)
-    for (let i = 0; i < arr.length; i++){
-        if ( i > 0){
-            total+= (arr[i] + barista(arr[i-1]))+2
-        }
-        else {
-            total+= arr[i]
-        }
-    } return total
-}
-console.log(barista(blah))
+// total = 0
+// let blah = [4,3,2]
+// blah.sort((a,b) => a-b)
+// function barista(arr){
+//     for (let i = 0; i < arr.length; i++){
+//         if ( i > 0){
+//             arr.reduce()
+//         else {
+//             total+= arr[i]
+//             console.log(total)
+//         }
+//     } return total
+// }
+// console.log(barista(blah))
 
 
 
@@ -1858,3 +1857,25 @@ console.log(barista(blah))
 
     //     return time
     //   }
+
+
+
+    function solution(number){
+        let sum = 0
+        if (number < 0){
+            return 0}
+        else{
+            for (let i = 0; i < number; i++){
+            if ((i%3===0) && (i%5)){
+                sum += i
+            } else if (i%3===0){
+                sum += i
+            } else if (i%5===0){
+                sum += i
+            }
+        }
+        return sum
+    }
+}
+
+    console.log(solution(6))
