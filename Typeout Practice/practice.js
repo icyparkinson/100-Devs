@@ -1860,22 +1860,36 @@
 
 
 
-    function solution(number){
-        let sum = 0
-        if (number < 0){
-            return 0}
-        else{
-            for (let i = 0; i < number; i++){
-            if ((i%3===0) && (i%5)){
-                sum += i
-            } else if (i%3===0){
-                sum += i
-            } else if (i%5===0){
-                sum += i
-            }
-        }
-        return sum
+//     function solution(number){
+//         let sum = 0
+//         if (number < 0){
+//             return 0}
+//         else{
+//             for (let i = 0; i < number; i++){
+//             if ((i%3===0) && (i%5)){
+//                 sum += i
+//             } else if (i%3===0){
+//                 sum += i
+//             } else if (i%5===0){
+//                 sum += i
+//             }
+//         }
+//         return sum
+//     }
+// }
+
+//     console.log(solution(6))
+
+
+
+function accum(s) {
+	let newS = s.split("") //this would split the string into individual string arrays
+    for (let i = 0; i < newS.length; i++){
+        let mapS = newS.map(x => x[0].toUpperCase)
+        return mapS
     }
+    
+    
 }
 
-    console.log(solution(6))
+console.log(accum("abcd"))
