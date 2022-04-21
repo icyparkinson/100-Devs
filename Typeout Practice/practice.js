@@ -1884,8 +1884,9 @@
 
 function accum(s) {
 	let newS = s.split("") //this would split the string into individual string arrays
+    let mapS = []
     for (let i = 0; i < newS.length; i++){
-        let mapS = newS.map(x => x[0].toUpperCase)
+        mapS.push(format(newS[i], i+1))
         return mapS
     }
     
