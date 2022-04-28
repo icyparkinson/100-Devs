@@ -1882,15 +1882,26 @@
 
 
 
-function accum(s) {
-	let newS = s.split("") //this would split the string into individual string arrays
-    let mapS = []
-    for (let i = 0; i < newS.length; i++){
-        mapS.push(format(newS[i], i+1))
-        return mapS
-    }
-    
-    
-}
+// function accum(s) {
+//     let arr = []
+//     for (let i = 0; i < s.length; i++){
 
-console.log(accum("abcd"))
+//     }
+
+//     function format(s,num){
+//         let letter = s.toUpperCase()
+
+//         while (letter.length !== num){
+//             letter += s.toLowerCase()
+//         }
+//     } return letter
+
+// }
+
+// console.log(accum("abcd"))
+
+let newList = ["dog", "cat", "rabbit", "fox"]
+
+const filtList = newList.filter((x, i) => x[0] ==="d", i)
+
+console.log(filtList)
