@@ -1900,8 +1900,46 @@
 
 // console.log(accum("abcd"))
 
-let newList = ["dog", "cat", "rabbit", "fox"]
+// let newList = ["dog", "cat", "rabbit", "fox"]
 
-const filtList = newList.filter((x, i) => x[0] ==="d", i)
+// const filtList = newList.filter((x, i) => x[0] ==="d", i)
 
-console.log(filtList)
+// console.log(filtList)
+
+class EspressoMachineIcy{
+    constructor(color, size, model, price){
+        this.color = color
+        this.size = size
+        this.model = model
+        this.price = price
+    }
+        turnOn(){
+            console.log("turn on")
+        }
+        turnOff(){
+            console.log("turn off")
+        }
+        brew(){
+            console.log("begin brewing")
+        }
+    }
+
+
+class EspressoMachine{
+    constructor(color, make, model, price){
+        this.color = color
+        this.make = make
+        this.model = model
+        this.price = price
+    }
+}
+
+let blah = new EspressoMachineIcy("red", "small", "Gaggia", 40)
+
+class Animal{
+    constructor(size, color, gender){
+        this.size = size
+        this.color = color
+        this.gender = gender
+    }
+}
