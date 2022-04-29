@@ -1906,7 +1906,7 @@
 
 // console.log(filtList)
 
-class EspressoMachineIcy{
+class EspressoMachineName{
     constructor(color, size, model, price){
         this.color = color
         this.size = size
