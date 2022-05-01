@@ -1906,40 +1906,81 @@
 
 // console.log(filtList)
 
-class EspressoMachineName{
-    constructor(color, size, model, price){
-        this.color = color
-        this.size = size
-        this.model = model
-        this.price = price
-    }
-        turnOn(){
-            console.log("turn on")
-        }
-        turnOff(){
-            console.log("turn off")
-        }
-        brew(){
-            console.log("begin brewing")
-        }
-    }
+// class EspressoMachineName{
+//     constructor(color, size, model, price){
+//         this.color = color
+//         this.size = size
+//         this.model = model
+//         this.price = price
+//     }
+//         turnOn(){
+//             console.log("turn on")
+//         }
+//         turnOff(){
+//             console.log("turn off")
+//         }
+//         brew(){
+//             console.log("begin brewing")
+//         }
+//     }
 
 
-class EspressoMachine{
-    constructor(color, make, model, price){
-        this.color = color
-        this.make = make
-        this.model = model
-        this.price = price
+// class EspressoMachine{
+//     constructor(color, make, model, price){
+//         this.color = color
+//         this.make = make
+//         this.model = model
+//         this.price = price
+//     }
+// }
+
+// let blah = new EspressoMachineIcy("red", "small", "Gaggia", 40)
+
+// class Animal{
+//     constructor(size, color, gender){
+//         this.size = size
+//         this.color = color
+//         this.gender = gender
+//     }
+// }
+
+
+
+import React from "react"
+import ReactDOM from "react-dom"
+
+const green = "#39D1B4"
+const yellow = "#FFD712"
+
+class Toggle extends React.Component{
+    constructor(props){
+        super(props)
+        this.state = {color: green}
+        this.changeColor = this.changeColor.bind(this)
+    }
+
+    changeColor(){
+        const color = this.state.color == green ? yellow : green;
+        this.setState({color: color})
+    }
+
+    render(){
+        return(
+            <div style = {{ background: this.state.color}}>
+                <h1>
+                    Change color
+                </h1>
+                <button onClick = {this.changeColor}>
+                    Change color
+                </button>
+            </div>
+        )
     }
 }
 
-let blah = new EspressoMachineIcy("red", "small", "Gaggia", 40)
 
-class Animal{
-    constructor(size, color, gender){
-        this.size = size
-        this.color = color
-        this.gender = gender
-    }
-}
+
+ReactDOM.render(
+    <Toggle />,
+    document.getElementById("app")
+)
