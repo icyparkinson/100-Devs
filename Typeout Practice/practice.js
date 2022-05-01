@@ -1946,41 +1946,156 @@
 
 
 
+// import React from "react"
+// import ReactDOM from "react-dom"
+
+// const green = "#39D1B4"
+// const yellow = "#FFD712"
+
+// class Toggle extends React.Component{
+//     constructor(props){
+//         super(props)
+//         this.state = {color: green}
+//         this.changeColor = this.changeColor.bind(this)
+//     }
+
+//     changeColor(){
+//         const color = this.state.color == green ? yellow : green;
+//         this.setState({color: color})
+//     }
+
+//     render(){
+//         return(
+//             <div style = {{ background: this.state.color}}>
+//                 <h1>
+//                     Change color
+//                 </h1>
+//                 <button onClick = {this.changeColor}>
+//                     Change color
+//                 </button>
+//             </div>
+//         )
+//     }
+// }
+
+
+
+// ReactDOM.render(
+//     <Toggle />,
+//     document.getElementById("app")
+// )
+
+
+// import React from "react"
+// import ReactDOM from "react-dom"
+
+// const green = "#39D1B4"
+// const yellow = "#FFD712"
+
+// class Toggle extends React.Component{
+//     constructor(props){
+//         super(props)
+//         this.state = {color: green}
+//         this.changeColor = this.changeColor.bind(this)
+//     }
+
+//     changeColor(){
+//         const color = this.state.color = green ? yellow : green
+//         this.setState( {color: color})
+//     }
+
+//     render(){
+//         return(
+//             <div style = {{ background: this.style.color}}>
+//                 <h1>
+//                     Change color!
+//                 </h1>
+//                 <button onclick = {this.changeColor}>
+//                     Click to change
+//                 </button>
+//             </div>
+//         )
+//     }
+// }
+
+// ReactDOM.render(
+//     <Toggle />,
+//     document.getElementById("app")
+// )
+
+// const Toggle = () => {
+
+// }
+
+// TASK LIST
+
 import React from "react"
-import ReactDOM from "react-dom"
 
-const green = "#39D1B4"
-const yellow = "#FFD712"
+export default function TasksList({ allTasks, handleDelete}) {
+    return(
+        <ul>
+            {allTasks.map( ({title, description, id}) => (
+                <li key = {id}>
+                    <div>
+                        <h2>
+                            {title}
+                        </h2>
+                        <button onClick = {() => handleDelete(id)}>
+                            X
+                        </button>
+                    </div>
+                    {!description ? null : <p>{description}</p>}
+                </li>
+            ))}
+        </ul>
+    )
+}
 
-class Toggle extends React.Component{
-    constructor(props){
-        super(props)
-        this.state = {color: green}
-        this.changeColor = this.changeColor.bind(this)
-    }
+import React from "react"
 
-    changeColor(){
-        const color = this.state.color == green ? yellow : green;
-        this.setState({color: color})
-    }
-
-    render(){
-        return(
-            <div style = {{ background: this.state.color}}>
-                <h1>
-                    Change color
-                </h1>
-                <button onClick = {this.changeColor}>
-                    Change color
-                </button>
-            </div>
-        )
-    }
+export default function TasksList({allTasks, handleDelete}){
+    return(
+        <ul>
+            {allTasks.map( ({title, description, id}) => (
+                <li key={id}>
+                    <div>
+                        <h2>
+                            {title}
+                        </h2>
+                        <button onClick = {() => handleDelete(id)}>
+                            X
+                        </button>
+                    </div>
+                    {!description ? null : <p>{description}</p>}
+                </li>
+            ))}
+        </ul>
+    )
 }
 
 
+import React, { Component } from "react"
 
-ReactDOM.render(
-    <Toggle />,
-    document.getElementById("app")
-)
+export default class AppClass extends Component {
+    constructor(props){
+        super(props)
+        this.state = {
+            newTask: {},
+            allTasks: []
+        }
+    }
+
+    handleChange( {target} ){
+        const { name, value } = target
+        this.setState( (prevState) => ({
+            ...prevState,
+            newTask: {
+                ...prevState.newTask,
+                [name]: value,
+                id: Date.now()
+            }
+        }))
+    }
+}
+
+import React, {useState} from "react"
