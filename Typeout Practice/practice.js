@@ -2029,73 +2029,111 @@
 
 // TASK LIST
 
-import React from "react"
+// import React from "react"
 
-export default function TasksList({ allTasks, handleDelete}) {
+// export default function TasksList({ allTasks, handleDelete}) {
+//     return(
+//         <ul>
+//             {allTasks.map( ({title, description, id}) => (
+//                 <li key = {id}>
+//                     <div>
+//                         <h2>
+//                             {title}
+//                         </h2>
+//                         <button onClick = {() => handleDelete(id)}>
+//                             X
+//                         </button>
+//                     </div>
+//                     {!description ? null : <p>{description}</p>}
+//                 </li>
+//             ))}
+//         </ul>
+//     )
+// }
+
+// import React from "react"
+
+// export default function TasksList({allTasks, handleDelete}){
+//     return(
+//         <ul>
+//             {allTasks.map( ({title, description, id}) => (
+//                 <li key={id}>
+//                     <div>
+//                         <h2>
+//                             {title}
+//                         </h2>
+//                         <button onClick = {() => handleDelete(id)}>
+//                             X
+//                         </button>
+//                     </div>
+//                     {!description ? null : <p>{description}</p>}
+//                 </li>
+//             ))}
+//         </ul>
+//     )
+// }
+
+
+// import React, { Component } from "react"
+
+// export default class AppClass extends Component {
+//     constructor(props){
+//         super(props)
+//         this.state = {
+//             newTask: {},
+//             allTasks: []
+//         }
+//     }
+
+//     handleChange( {target} ){
+//         const { name, value } = target
+//         this.setState( (prevState) => ({
+//             ...prevState,
+//             newTask: {
+//                 ...prevState.newTask,
+//                 [name]: value,
+//                 id: Date.now()
+//             }
+//         }))
+//     }
+// }
+
+// import React, {useState} from "react"
+
+
+function Counter ({ initialCount }) {
+    const [count, setCount] = useState(initialCount)
     return(
-        <ul>
-            {allTasks.map( ({title, description, id}) => (
-                <li key = {id}>
-                    <div>
-                        <h2>
-                            {title}
-                        </h2>
-                        <button onClick = {() => handleDelete(id)}>
-                            X
-                        </button>
-                    </div>
-                    {!description ? null : <p>{description}</p>}
-                </li>
-            ))}
-        </ul>
+        <div>
+            Count: {count}
+            <button onClick={()=> setCount(initialCount)}>
+                Reset
+            </button>
+            <button onClick={() => setCount( (prevCount) => prevCount +1)}>
+                +
+            </button>
+            <button onClick={() => setCount( (prevCount) => prevCount -1)}>
+                -
+            </button>
+        </div>
     )
 }
 
-import React from "react"
 
-export default function TasksList({allTasks, handleDelete}){
+function Counter ({initialCount}){
+    const [count, setCount] = useState(initialCount)
     return(
-        <ul>
-            {allTasks.map( ({title, description, id}) => (
-                <li key={id}>
-                    <div>
-                        <h2>
-                            {title}
-                        </h2>
-                        <button onClick = {() => handleDelete(id)}>
-                            X
-                        </button>
-                    </div>
-                    {!description ? null : <p>{description}</p>}
-                </li>
-            ))}
-        </ul>
+        <div>
+            count: {count}
+            <button onClick={() => setCount(initialCount)}>
+                Reset
+            </button>
+            <button onClick={() => setCount( (prevCount) => prevCount +1)}>
+                +
+            </button>
+            <button onClick={() => setCount( (prevCount) => prevCount -1)}>
+                -
+            </button>
+        </div>
     )
 }
-
-
-import React, { Component } from "react"
-
-export default class AppClass extends Component {
-    constructor(props){
-        super(props)
-        this.state = {
-            newTask: {},
-            allTasks: []
-        }
-    }
-
-    handleChange( {target} ){
-        const { name, value } = target
-        this.setState( (prevState) => ({
-            ...prevState,
-            newTask: {
-                ...prevState.newTask,
-                [name]: value,
-                id: Date.now()
-            }
-        }))
-    }
-}
-
-import React, {useState} from "react"
