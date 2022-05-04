@@ -2183,16 +2183,36 @@
 //     )
 // }
 
-export default function PersonalPizza() {
-    const [selected, setSelected] = useState([]);
+// export default function PersonalPizza() {
+//     const [selected, setSelected] = useState([]);
    
-    const toggleTopping = ({target}) => {
-      const clickedTopping = target.value;
-      setSelected((prev) => {
-        if (prev.includes(clickedTopping)) {
-          return prev.filter(t => t !== clickedTopping);
-        } else {
-          return [clickedTopping, ...prev];
-        }
-      });
-    };
+//     const toggleTopping = ({target}) => {
+//       const clickedTopping = target.value;
+//       setSelected((prev) => {
+//         if (prev.includes(clickedTopping)) {
+//           return prev.filter(t => t !== clickedTopping);
+//         } else {
+//           return [clickedTopping, ...prev];
+//         }
+//       });
+//     };
+
+function findOdd(arr){
+  count = 0
+  arr.sort((a,b) =>a-b )
+  for (let i = 0; i < arr.length; i++){
+    if (arr[i] === arr[i+1]){
+      count++
+    } else{
+      count++
+      if (count%2!=0){
+        return arr[i]
+      }
+    }
+  }
+}
+
+
+let arrayList = [2,2,2,2,2,2,3,2,2,2,2]
+
+console.log(findOdd(arrayList))
