@@ -2101,39 +2101,98 @@
 // import React, {useState} from "react"
 
 
-function Counter ({ initialCount }) {
-    const [count, setCount] = useState(initialCount)
-    return(
-        <div>
-            Count: {count}
-            <button onClick={()=> setCount(initialCount)}>
-                Reset
-            </button>
-            <button onClick={() => setCount( (prevCount) => prevCount +1)}>
-                +
-            </button>
-            <button onClick={() => setCount( (prevCount) => prevCount -1)}>
-                -
-            </button>
-        </div>
-    )
-}
+// function Counter ({ initialCount }) {
+//     const [count, setCount] = useState(initialCount)
+//     return(
+//         <div>
+//             Count: {count}
+//             <button onClick={()=> setCount(initialCount)}>
+//                 Reset
+//             </button>
+//             <button onClick={() => setCount( (prevCount) => prevCount +1)}>
+//                 +
+//             </button>
+//             <button onClick={() => setCount( (prevCount) => prevCount -1)}>
+//                 -
+//             </button>
+//         </div>
+//     )
+// }
 
 
-function Counter ({initialCount}){
-    const [count, setCount] = useState(initialCount)
-    return(
-        <div>
-            count: {count}
-            <button onClick={() => setCount(initialCount)}>
-                Reset
-            </button>
-            <button onClick={() => setCount( (prevCount) => prevCount +1)}>
-                +
-            </button>
-            <button onClick={() => setCount( (prevCount) => prevCount -1)}>
-                -
-            </button>
-        </div>
-    )
-}
+// function Counter ({initialCount}){
+//     const [count, setCount] = useState(initialCount)
+//     return(
+//         <div>
+//             count: {count}
+//             <button onClick={() => setCount(initialCount)}>
+//                 Reset
+//             </button>
+//             <button onClick={() => setCount( (prevCount) => prevCount +1)}>
+//                 +
+//             </button>
+//             <button onClick={() => setCount( (prevCount) => prevCount -1)}>
+//                 -
+//             </button>
+//         </div>
+//     )
+// }
+
+// import React, { useState } from "react"
+
+// const options = ["Bell Pepper", "Sausage", "Pepperoni", "Pineapple"]
+
+// export default function personalPizza() {
+//     const [selected, setSelected] = useState([])
+// }
+
+// const toggleTopping = ({target}) => {
+//     const clickedTopping = target.value
+//     setSelected( (prev) => {
+//         if (prev.includes(clickedTopping)){
+//             return prev.filter(t => t !== clickedTopping)
+//         } else{
+//             return [clickedTopping, ...prev]
+//         }
+//     })
+// }
+
+// const toggleTopping = ({target}) =>{
+//     const clickedTopping = target.value
+//     setSelected((prev) => {
+//         if (prev.includes(clickedTopping)){
+//             return prev.filter(t => t !== clickedTopping)
+//         } else{
+//             return [clickedTopping, ...prev]
+//         }
+//     })
+// }
+
+// import React, {useState} from "react"
+
+// function Counter(){
+//     const [count, setCount] = useState(0)
+
+//     return(
+//         <div>
+//             <p>You clicked {count} times</p>
+//             <button onClick = {() => setCount(count+1)}>
+//                 Click
+//             </button>
+//         </div>
+//     )
+// }
+
+export default function PersonalPizza() {
+    const [selected, setSelected] = useState([]);
+   
+    const toggleTopping = ({target}) => {
+      const clickedTopping = target.value;
+      setSelected((prev) => {
+        if (prev.includes(clickedTopping)) {
+          return prev.filter(t => t !== clickedTopping);
+        } else {
+          return [clickedTopping, ...prev];
+        }
+      });
+    };
