@@ -2251,8 +2251,9 @@
 
 // console.log(arf("car"))
 
-let arrA = []
+let arrA = [1,3,4]
 let arrB = [1,3]
+
 function question(arr){
   if (arr === []){
     console.log("hi")
@@ -2262,7 +2263,7 @@ function question(arr){
   }
 }
 
-question(arrA)
+// question(arrA)
 
 function arrayDiff(arr1, arr2){
   let set = new Set()
@@ -2290,4 +2291,15 @@ function arrayDiff(arr1, arr2){
  return finArr
 }}
 
-console.log(arrayDiff(arrA, arrB))
+// console.log(arrayDiff(arrA, arrB))
+
+function diffArray(arr1, arr2){
+  let finArr=[]
+  for (let i = 0; i < arr1.length; i++){
+    if (arr2.indexOf(arr1[i]) < 0){
+      finArr.push(arr1[i])
+    }
+  } return finArr
+}
+
+console.log(diffArray(arrA, arrB))
