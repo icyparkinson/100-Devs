@@ -2251,55 +2251,83 @@
 
 // console.log(arf("car"))
 
-let arrA = [1,3,4]
-let arrB = [1,3]
+// let arrA = [1,3,4]
+// let arrB = [1,3]
 
-function question(arr){
-  if (arr === []){
-    console.log("hi")
-  }
-  else {
-    console.log ("bye")
-  }
-}
+// function question(arr){
+//   if (arr === []){
+//     console.log("hi")
+//   }
+//   else {
+//     console.log ("bye")
+//   }
+// }
 
-// question(arrA)
+// // question(arrA)
 
-function arrayDiff(arr1, arr2){
-  let set = new Set()
-  let setB = new Set()
-  let finArr = []
-  if ((arr1.length===0) || (arr2.length===0)){
-    return finArr
-  } else{
+// function arrayDiff(arr1, arr2){
+//   let set = new Set()
+//   let setB = new Set()
+//   let finArr = []
+//   if ((arr1.length===0) || (arr2.length===0)){
+//     return finArr
+//   } else{
 
-  for (let i = 0; i < arr1.length; i++){
-    set.add(arr1[i])
-  }
-  for (let j = 0; j < arr2.length; j++){
-    setB.add(arr2[j])
-    if (!set.has(arr2[j])){
-      finArr.push(arr2[j])
-    }
-  }
-  for (let i = 0; i < arr1.length; i++){
-    if (!setB.has(arr1[i])){
-      finArr.push(arr1[i])
-    }
-  }
+//   for (let i = 0; i < arr1.length; i++){
+//     set.add(arr1[i])
+//   }
+//   for (let j = 0; j < arr2.length; j++){
+//     setB.add(arr2[j])
+//     if (!set.has(arr2[j])){
+//       finArr.push(arr2[j])
+//     }
+//   }
+//   for (let i = 0; i < arr1.length; i++){
+//     if (!setB.has(arr1[i])){
+//       finArr.push(arr1[i])
+//     }
+//   }
   
- return finArr
-}}
+//  return finArr
+// }}
 
-// console.log(arrayDiff(arrA, arrB))
+// // console.log(arrayDiff(arrA, arrB))
 
-function diffArray(arr1, arr2){
-  let finArr=[]
-  for (let i = 0; i < arr1.length; i++){
-    if (arr2.indexOf(arr1[i]) < 0){
-      finArr.push(arr1[i])
-    }
-  } return finArr
+// function diffArray(arr1, arr2){
+//   let finArr=[]
+//   for (let i = 0; i < arr1.length; i++){
+//     if (arr2.indexOf(arr1[i]) < 0){
+//       finArr.push(arr1[i])
+//     }
+//   } return finArr
+// }
+
+// console.log(diffArray(arrA, arrB))
+
+// let arr = "1 2 3 4 5"
+
+// function highAndLow(numbers){
+//   let result = []
+//   let str = numbers.split(" ")
+//   let nums = str.map((x) => Number(x))
+//   nums.sort( (a,b) => a-b)
+//   result.push(nums[nums.length-1])
+//   result.push(nums[0])
+//   return result.join(" ")
+// }
+
+// console.log(highAndLow(arr))
+
+function likes(names) {
+  if (names.length === 0){
+    return "no one likes this"
+  } else if (names.length === 1){
+    return `${names[0]} likes this`
+  } else if (names.length === 2){
+    return `${names[0]} and ${names[1]} like this`
+  } else if (names.length === 3){
+    return `${names[0]}, ${names[1]} and ${names[2]} like this`
+  } else if (names.length > 3){
+    return `${names[0]}, ${names[1]}, and ${names.length-2} others like this`
 }
-
-console.log(diffArray(arrA, arrB))
+}
