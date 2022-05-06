@@ -2197,22 +2197,49 @@
 //       });
 //     };
 
-function findOdd(arr){
-  count = 0
-  arr.sort((a,b) =>a-b )
-  for (let i = 0; i < arr.length; i++){
-    if (arr[i] === arr[i+1]){
-      count++
-    } else{
-      count++
-      if (count%2!=0){
-        return arr[i]
-      }
-    }
+// function findOdd(arr){
+//   count = 0
+//   arr.sort((a,b) =>a-b )
+//   for (let i = 0; i < arr.length; i++){
+//     if (arr[i] === arr[i+1]){
+//       count++
+//     } else{
+//       count++
+//       if (count%2!=0){
+//         return arr[i]
+//       }
+//     }
+//   }
+// }
+
+
+// let arrayList = [2,2,2,2,2,2,3,2,2,2,2]
+
+// console.log(findOdd(arrayList))
+
+
+function recSum(num){
+  if (String(num).length > 1){
+    let result = Array.from(String(num), Number)
+    let newRe = result.reduce( (acc, c) => acc + c, 0)
+    recSum(newRe)
+  }
+  else{
+    return num
   }
 }
 
+function recuSum(num){
+  result = Array.from(String(num), Number)
+  let newRe = result.reduce( (acc,c) => acc+c)
+  console.log(newRe)
+  if (String(newRe).length > 1){
+    recuSum(newRe)
+  }
+  return newRe
+  }
 
-let arrayList = [2,2,2,2,2,2,3,2,2,2,2]
 
-console.log(findOdd(arrayList))
+
+
+console.log(recuSum(691))
