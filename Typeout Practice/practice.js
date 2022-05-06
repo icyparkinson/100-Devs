@@ -2250,3 +2250,44 @@
 // }
 
 // console.log(arf("car"))
+
+let arrA = []
+let arrB = [1,3]
+function question(arr){
+  if (arr === []){
+    console.log("hi")
+  }
+  else {
+    console.log ("bye")
+  }
+}
+
+question(arrA)
+
+function arrayDiff(arr1, arr2){
+  let set = new Set()
+  let setB = new Set()
+  let finArr = []
+  if ((arr1.length===0) || (arr2.length===0)){
+    return finArr
+  } else{
+
+  for (let i = 0; i < arr1.length; i++){
+    set.add(arr1[i])
+  }
+  for (let j = 0; j < arr2.length; j++){
+    setB.add(arr2[j])
+    if (!set.has(arr2[j])){
+      finArr.push(arr2[j])
+    }
+  }
+  for (let i = 0; i < arr1.length; i++){
+    if (!setB.has(arr1[i])){
+      finArr.push(arr1[i])
+    }
+  }
+  
+ return finArr
+}}
+
+console.log(arrayDiff(arrA, arrB))
