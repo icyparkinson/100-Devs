@@ -2218,28 +2218,35 @@
 // console.log(findOdd(arrayList))
 
 
-function recSum(num){
-  if (String(num).length > 1){
-    let result = Array.from(String(num), Number)
-    let newRe = result.reduce( (acc, c) => acc + c, 0)
-    recSum(newRe)
-  }
-  else{
-    return num
-  }
-}
+// function recSum(num){
+//   if (String(num).length > 1){
+//     let result = Array.from(String(num), Number)
+//     let newRe = result.reduce( (acc, c) => acc + c, 0)
+//     recSum(newRe)
+//   }
+//   else{
+//     return num
+//   }
+// }
 
-function recuSum(num){
-  result = Array.from(String(num), Number)
-  let newRe = result.reduce( (acc,c) => acc+c)
-  console.log(newRe)
-  if (String(newRe).length > 1){
-    recuSum(newRe)
-  }
-  return newRe
-  }
+// function recuSum(num){
+//     result = Array.from(String(num), Number)
+//     let newRe = result.reduce( (acc,c) => acc+c, 0)
+//     if (newRe < 10){
+//     return newRe
+//     }
+//     else{
+//       return recuSum(newRe)
+//     }
+//   }
 
 
 
 
-console.log(recuSum(691))
+// console.log(recuSum(6192))
+
+// function arf(num){
+//   return Array.from(String(num))
+// }
+
+// console.log(arf("car"))
