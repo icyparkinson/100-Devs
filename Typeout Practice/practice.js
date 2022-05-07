@@ -2332,19 +2332,29 @@
 // }
 // }
 
-const findTarget = (head, target) => {
-  let current = head
-  while (current !== null){
-    if (current.val === target){
-      return true
-    } else{
-      current = head.next
-    }
-  } return false
-}
+// const findTarget = (head, target) => {
+//   let current = head
+//   while (current !== null){
+//     if (current.val === target){
+//       return true
+//     } else{
+//       current = head.next
+//     }
+//   } return false
+// }
 
-const findTarg = (head, target) => {
-  if (head === null) return false
-  if (head.val === target) return true
-  return findTarg(head.next, target)
+// const findTarg = (head, target) => {
+//   if (head === null) return false
+//   if (head.val === target) return true
+//   return findTarg(head.next, target)
+// }
+
+const searchIndex = (head, index) =>{
+  let current = head
+  let count = 0
+  while (count !== null){
+    if(count === index) return current.val
+    current = current.next
+    count++
+  } return null
 }
