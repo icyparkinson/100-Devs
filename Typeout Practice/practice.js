@@ -2422,19 +2422,49 @@
 //   }
 // }
 
-let alpha = "abcdefghijklmnopqrstuvwxyz"
+// let alpha = "abcdefghijklmnopqrstuvwxyz"
 
-const alphabetPosition = (text) => {
-    newArr=[]
-    let newStr = ""
-    let alpha = "abcdefghijklmnopqrstuvwxyz"
-    let str = text.toLowerCase().split(" ").join("")
-    for (let i = 0; i<str.length; i++){
-        // newStr = str.charAt(i).toLowerCase()
-        if (alpha.indexOf(str[i]) > -1){
-        newArr.push(alpha.indexOf(str[i])+1)
-        }
-    } return newArr.join(" ")
+// const alphabetPosition = (text) => {
+//     newArr=[]
+//     let newStr = ""
+//     let alpha = "abcdefghijklmnopqrstuvwxyz"
+//     let str = text.toLowerCase().split(" ").join("")
+//     for (let i = 0; i<str.length; i++){
+//         // newStr = str.charAt(i).toLowerCase()
+//         if (alpha.indexOf(str[i]) > -1){
+//         newArr.push(alpha.indexOf(str[i])+1)
+//         }
+//     } return newArr.join(" ")
+// }
+
+// console.log(alphabetPosition("Book!"))
+
+// const alphaPos = (text) => {
+//   let str = []
+//   let alpha = "abcdefghijklmnopqrstuvwyz"
+//   // Change sentence to one with no spaces and lower case
+//   let phrase = text.toLowerCase().split(" ").join("")
+//   for (let i = 0; i < phrase.length; i++){
+//     if (alpha.indexOf(phrase[i]) > -1 ) {
+//       str.push(alpha.indexOf(phrase[i])+1)
+//     }
+//   } return str
+// }
+
+// console.log(alphaPos("book"))
+
+let getMiddle = (word) => {
+  let answer = []
+  let length = word.length
+  if (length%2 ===0){
+    answer.push(word.charAt(length/2-1))
+    answer.push(word.charAt(length/2))
+    return answer.join("")
+  }
+  else{
+    answer.push(word.charAt((length-1)/2))
+    return answer.join("")
+  }
 }
 
-console.log(alphabetPosition("Book!"))
+console.log(getMiddle("testing"))
