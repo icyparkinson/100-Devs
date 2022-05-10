@@ -2359,65 +2359,82 @@
 //   } return null
 // }
 
-import React, { useState } from "react";
-import NewTask from "../Presentational/NewTask";
-import TasksList from "../Presentational/TasksList";
+// import React, { useState } from "react";
+// import NewTask from "../Presentational/NewTask";
+// import TasksList from "../Presentational/TasksList";
 
-export default function AppFunction() {
-  const [newTask, setNewTask] = useState({});
-  const handleChange = ({ target }) => {
-    const { name, value } = target;
-    setNewTask((prev) => ({ 
-      ...prev, 
-      id: Date.now(), 
-      [name]: value 
-    }));
-  };
+// export default function AppFunction() {
+//   const [newTask, setNewTask] = useState({});
+//   const handleChange = ({ target }) => {
+//     const { name, value } = target;
+//     setNewTask((prev) => ({ 
+//       ...prev, 
+//       id: Date.now(), 
+//       [name]: value 
+//     }));
+//   };
 
-  const [allTasks, setAllTasks] = useState([]);
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    if (!newTask.title) return;
-    setAllTasks((prev) => [newTask, ...prev]);
-    setNewTask({});
-  };
-  const handleDelete = (taskIdToRemove) => {
-    setAllTasks((prev) => prev.filter((task) => task.id !== taskIdToRemove));
-  };
+//   const [allTasks, setAllTasks] = useState([]);
+//   const handleSubmit = (event) => {
+//     event.preventDefault();
+//     if (!newTask.title) return;
+//     setAllTasks((prev) => [newTask, ...prev]);
+//     setNewTask({});
+//   };
+//   const handleDelete = (taskIdToRemove) => {
+//     setAllTasks((prev) => prev.filter((task) => task.id !== taskIdToRemove));
+//   };
 
-  return (
-    <main>
-      <h1>Tasks</h1>
-      <NewTask
-        newTask={newTask}
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-      />
-      <TasksList allTasks={allTasks} handleDelete={handleDelete} />
-    </main>
-  );
+//   return (
+//     <main>
+//       <h1>Tasks</h1>
+//       <NewTask
+//         newTask={newTask}
+//         handleChange={handleChange}
+//         handleSubmit={handleSubmit}
+//       />
+//       <TasksList allTasks={allTasks} handleDelete={handleDelete} />
+//     </main>
+//   );
+// }
+
+
+
+// export default function AppF(){
+//   const [newTask, setNewTask] = useState({})
+//   const handleChange = ({target}) => {
+//     const [name, value] = target
+//     setNewTask((prev) => ({...prev, id: Date.now(), [name]: value}))
+//   }
+
+//   const [allTasks, setAllTask] = useState([])
+//   const handleSubmit = (event) => {
+//     event.preventDefault()
+//     if (!newTask.title) return
+//     setAllTask((prev) => {
+//       [newTask, ...prev]
+//     })
+//     setNewTask({})
+//   }
+
+//   const handleDelete = (taskIdToRemove) => {
+//     setAllTasks( (prev) => prev.filter( (task) => task.id !== taskIdToRemove))
+//   }
+// }
+
+let alpha = "abcdefghijklmnopqrstuvwxyz"
+
+const alphabetPosition = (text) => {
+    newArr=[]
+    let newStr = ""
+    let alpha = "abcdefghijklmnopqrstuvwxyz"
+    let str = text.toLowerCase().split(" ").join("")
+    for (let i = 0; i<str.length; i++){
+        // newStr = str.charAt(i).toLowerCase()
+        if (alpha.indexOf(str[i]) > -1){
+        newArr.push(alpha.indexOf(str[i])+1)
+        }
+    } return newArr.join(" ")
 }
 
-
-
-export default function AppF(){
-  const [newTask, setNewTask] = useState({})
-  const handleChange = ({target}) => {
-    const [name, value] = target
-    setNewTask((prev) => ({...prev, id: Date.now(), [name]: value}))
-  }
-
-  const [allTasks, setAllTask] = useState([])
-  const handleSubmit = (event) => {
-    event.preventDefault()
-    if (!newTask.title) return
-    setAllTask((prev) => {
-      [newTask, ...prev]
-    })
-    setNewTask({})
-  }
-
-  const handleDelete = (taskIdToRemove) => {
-    setAllTasks( (prev) => prev.filter( (task) => task.id !== taskIdToRemove))
-  }
-}
+console.log(alphabetPosition("Book!"))
