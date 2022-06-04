@@ -2453,18 +2453,124 @@
 
 // console.log(alphaPos("book"))
 
-let getMiddle = (word) => {
-  let answer = []
-  let length = word.length
-  if (length%2 ===0){
-    answer.push(word.charAt(length/2-1))
-    answer.push(word.charAt(length/2))
-    return answer.join("")
+// let getMiddle = (word) => {
+//   let answer = []
+//   let length = word.length
+//   if (length%2 ===0){
+//     answer.push(word.charAt(length/2-1))
+//     answer.push(word.charAt(length/2))
+//     return answer.join("")
+//   }
+//   else{
+//     answer.push(word.charAt((length-1)/2))
+//     return answer.join("")
+//   }
+// }
+
+// console.log(getMiddle("testing"))
+
+
+// Head.next = Prev
+// Prev = Head
+// head = head.next
+
+// const date = new Date(document.getElementById("dateField").value)
+
+// console.log(date.getTimezoneOffset)
+
+// let d= new Date()
+// localTime = d.getTime()
+// // console.log(localTime)
+// // localOffset = d.getTimezoneOffset() * 60000
+// // console.log(localOffset)
+
+
+// const dog = 2
+// const cat = 4
+
+// const rabbit = (num1, num2) => {
+//   return dog * cat
+// }
+
+// // console.log(rabbit())
+
+// console.log(d.getTime())
+// console.log(d)
+
+// function joinElements (array, joinString) {
+//   function recurse(index, resultSoFar){
+//     resultSoFar += array[index]
+
+//     if (index === array.length-1){
+//       return resultSoFar
+//     } else{
+//       return recurse(index + 1, resultSoFar + joinString)
+//     }
+//   }
+//   return recurse(0,"") + "e"
+// }
+
+// console.log(joinElements(["s", "cr", "t cod"], "e"))
+
+
+// function joinMyEle (array, joinString){
+//   let resultSoFar = ""
+//   for (let i = 0; i < array.length; i++){
+//     resultSoFar+= array[i] + joinString
+//   }
+
+//   return resultSoFar
+// }
+
+// console.log(joinMyEle(["s", "cr", "t cod"], "e"))
+
+
+//build a recursive factorial function
+
+// function recurse(n){
+//   if (n===0){
+//     return 1
+//   }
+//   else if (n > 0){
+//     return n * recurse(n-1)
+//   }
+// }
+
+// console.log(recurse(4))
+
+// 5 * 4 * 3 * 2 * 1
+// 5! = 5 * 4!
+
+function binS(arr, target){
+  let l = 0
+  let r = arr.length-1
+
+  if (arr.length === 1){
+    if (arr[0] === target){
+      return 0
+    } else{
+      return -1
+    }
   }
-  else{
-    answer.push(word.charAt((length-1)/2))
-    return answer.join("")
+
+  while (l < r){
+    let mid = l + ((r-l)/2)
+    let midVal = arr[mid]
+
+    if (midVal === target){
+      return mid
+    }
+
+    else if(midVal > target){
+      r = mid
+    }
+
+    else{
+      l = mid
+    }
   }
+
+  return -1
 }
 
-console.log(getMiddle("testing"))
+console.log(binS([1,2,3,4], 5))
