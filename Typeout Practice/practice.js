@@ -1,5 +1,7 @@
 // // YOUTUBE BG PICKER
 
+// const { addListener } = require("nodemon")
+
 // document.querySelector("li").addEventListener('click', purpleParty)
 
 // function purpleParty(){
@@ -2541,36 +2543,61 @@
 // 5 * 4 * 3 * 2 * 1
 // 5! = 5 * 4!
 
-function binS(arr, target){
-  let l = 0
-  let r = arr.length-1
+// function binS(arr, target){
+//   let l = 0
+//   let r = arr.length-1
 
-  if (arr.length === 1){
-    if (arr[0] === target){
-      return 0
-    } else{
-      return -1
-    }
-  }
+//   if (arr.length === 1){
+//     if (arr[0] === target){
+//       return 0
+//     } else{
+//       return -1
+//     }
+//   }
 
-  while (l < r){
-    let mid = l + ((r-l)/2)
-    let midVal = arr[mid]
+//   while (l < r){
+//     let mid = l + ((r-l)/2)
+//     let midVal = arr[mid]
 
-    if (midVal === target){
-      return mid
-    }
+//     if (midVal === target){
+//       return mid
+//     }
 
-    else if(midVal > target){
-      r = mid
-    }
+//     else if(midVal > target){
+//       r = mid
+//     }
 
-    else{
-      l = mid
-    }
-  }
+//     else{
+//       l = mid
+//     }
+//   }
 
-  return -1
+//   return -1
+// }
+
+//write a recursive function that does a linear search through array for a target #
+
+
+
+// function linearSearch(list, item){
+//   let index = -1
+
+//   list.forEach( (listItem, i) => {
+//     if (listItem === item){
+//       index = i
+//     }
+//   })
+//   return index
+
+// }
+
+// console.log(linearSearch([2,6,7,90,103], 6))
+
+
+function numMap(arr){
+  return arr.map( (element, index) => {
+    return `${index+1}: ${element}`
+  })
 }
 
-console.log(binS([1,2,3,4], 5))
+console.log(numMap(["a", "b", "c"]))
