@@ -2594,10 +2594,102 @@
 // console.log(linearSearch([2,6,7,90,103], 6))
 
 
-function numMap(arr){
-  return arr.map( (element, index) => {
-    return `${index+1}: ${element}`
-  })
-}
+// function numMap(arr){
+//   return arr.map( (element, index) => {
+//     return `${index+1}: ${element}`
+//   })
+// }
 
-console.log(numMap(["a", "b", "c"]))
+// console.log(numMap(["a", "b", "c"]))
+
+
+// const characters = [
+//   {
+//       name: 'Luke Skywalker',
+//       height: 172,
+//       mass: 77,
+//       eye_color: 'blue',
+//       gender: 'male',
+//   },
+//   {
+//       name: 'Darth Vader',
+//       height: 202,
+//       mass: 136,
+//       eye_color: 'yellow',
+//       gender: 'male',
+//   },
+//   {
+//       name: 'Leia Organa',
+//       height: 150,
+//       mass: 49,
+//       eye_color: 'brown',
+//       gender: 'female',
+//   },
+//   {
+//       name: 'Anakin Skywalker',
+//       height: 188,
+//       mass: 84,
+//       eye_color: 'blue',
+//       gender: 'male',
+//   },
+// ];
+
+// const nameGreaterThanFour = characters.filter( (blah) => {
+//   return blah.name.includes("u")
+// })
+
+// console.log(nameGreaterThanFour)
+
+// /**
+//  * @param {string} s
+//  * @return {boolean}
+//  */
+//  var isValid = function(s) {
+//   let brackets = {
+//       "(" : ")",
+//       "[" : "]",
+//       "{" : "}"
+//   }
+//   let stack = []
+//   for (let char of s){
+//      if (brackets[char]){
+//          stack.push(brackets[char])
+//          console.log(`after pushing: ${stack}`)
+//      } else{
+//          if (stack.pop() !== char){
+//              console.log(`after popping: ${stack}`)
+//              return false
+//          }
+//      }
+//   }
+//   return (!stack.length)
+  
+// }
+  
+  //stack = (
+
+    function largestComponent(graph){
+        let maxCount = 0
+        let visited = new Set()
+        
+        for (node in graph){
+            if (explore(graph, node, visited) === true){
+                maxCount = Math.max(count, maxCount)
+            }
+        } return maxCount
+    }
+    
+    
+    function explore(graph, current, visited){
+        if (visited.has(current)){
+            return false
+        }
+        visited.add(current)
+        
+        for (let neighbor of graph[current]){
+            if (explore(graph,neighbor,visited) === true){
+                count++
+            }
+        } return count
+        
+    }
